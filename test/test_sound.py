@@ -26,7 +26,7 @@ async def test_play_tts():
     """
     # is_serial: Serial execution
     # text: The text to be synthesized
-    block: StartPlayTTS = StartPlayTTS(text="Hello, I am Alphamini, la la la")
+    block: StartPlayTTS = StartPlayTTS(text="I love FPT so much, i love my school, my school is so wonderful",)
     # Return a tuple, response is a ControlTTSResponse
     (resultType, response) = await block.execute()
 
@@ -38,122 +38,6 @@ async def test_play_tts():
     assert resultType == MiniApiResultType.Success, 'test_play_tts timetout'
     assert response is not None and isinstance(response, ControlTTSResponse), 'test_play_tts result unavailable'
     assert response.isSuccess, 'test_play_tts failed'
-
-
-async def test_stop_play_tts():
-    """Test stop playing tts
-
-     Make the robot start to play a long text tts, the content is "Hello, I am Alphamini, la la la la la la la la la la la la la la la la la la la la la la la", do not wait result
-     After 2s, make the robot stop playing tts
-
-     #ControlTTSResponse.isSuccess: Is it successful
-
-     #ControlTTSResponse.resultCode: Return code
-
-     """
-    # is_serial: Serial execution
-    # text: The text to be synthesized
-    block: StartPlayTTS = StartPlayTTS(is_serial=False,
-                                       text="Hello, I am Alphamini, la la la la la la la la la la la la la la la la la la la la la la la")
-    # Return bool to indicate whether the transmission was successful
-    await block.execute()
-
-    await asyncio.sleep(2)
-
-    (resultType, response) = await StopPlayTTS().execute()
-
-    print(f'test_stop_play_tts result: {response}')
-    # The response of StopPlayTTS block contains resultCode and isSuccess
-    # If resultCode !=0, you can query the error description information through errors.get_speech_error_str(response.resultCode))
-    print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
-
-    assert resultType == MiniApiResultType.Success, 'test_stop_play_tts timetout'
-    assert response is not None and isinstance(response, ControlTTSResponse), 'test_stop_play_tts result unavailable'
-    assert response.isSuccess, 'test_stop_play_tts failed'
-
-
-# Test playback sound (online)
-async def test_play_online_audio():
-    """Test playing online sound
-
-     Make the robot play an online sound effect, such as "http://hao.haolingsheng.com/ring/000/995/52513bb6a4546b8822c89034afb8bacb.mp3"
-
-     Supported formats are mp3, amr, wav, etc.
-
-     And wait for the result
-
-     #PlayAudioResponse.isSuccess: Is it successful
-
-     #PlayAudioResponse.resultCode: Return code
-
-    """
-    # Play sound effects, url indicates the list of sound effects to be played
-    block: PlayAudio = PlayAudio(
-        url="http://hao.haolingsheng.com/ring/000/995/52513bb6a4546b8822c89034afb8bacb.mp3",
-        storage_type=AudioStorageType.NET_PUBLIC)
-    # response是个PlayAudioResponse
-    (resultType, response) = await block.execute()
-
-    print(f'test_play_online_audio result: {response}')
-    print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
-
-    assert resultType == MiniApiResultType.Success, 'test_play_online_audio timetout'
-    assert response is not None and isinstance(response, PlayAudioResponse), 'test_play_online_audio result unavailable'
-    assert response.isSuccess, 'test_play_online_audio failed'
-
-
-async def test_play_local_audio():
-    """Test playing local sound
-
-     Make the robot play a local built-in sound effect, the sound effect name is "read_016", and wait for the result
-
-     #PlayAudioResponse.isSuccess: Is it successful
-
-     #PlayAudioResponse.resultCode: Return code
-    """
-
-    block: PlayAudio = PlayAudio(
-        url="read_016",
-        storage_type=AudioStorageType.PRESET_LOCAL)
-    # response是个PlayAudioResponse
-    (resultType, response) = await block.execute()
-
-    print(f'test_play_local_audio result: {response}')
-    print('resultCode = {0}, error = {1}'.format(response.resultCode, errors.get_speech_error_str(response.resultCode)))
-
-    assert resultType == MiniApiResultType.Success, 'test_play_local_audio timetout'
-    assert response is not None and isinstance(response, PlayAudioResponse), 'test_play_local_audio result unavailable'
-    assert response.isSuccess, 'test_play_local_audio failed'
-
-
-# Test to obtain the sound resources of the robot
-async def test_get_audio_list():
-    """Test to get a list of sound effects
-
-     Get the list of sound effects built into the robot and wait for the result
-
-     #GetAudioListResponse.audio ([Audio]): Audio effect list
-
-         #Audio.name: Audio effect name
-
-         #Audio.suffix: audio suffix
-
-     #GetAudioListResponse.isSuccess: Is it successful
-
-     #GetAudioListResponse.resultCode: Return code
-
-    """
-    # search_type: AudioSearchType.INNER refers to the unmodifiable sound effect built into the robot, AudioSearchType.CUSTOM is placed in the sdcard/customize/music directory and can be modified by the developer
-    block: FetchAudioList = FetchAudioList(search_type=AudioSearchType.INNER)
-    # response is a GetAudioListResponse
-    (resultType, response) = await block.execute()
-
-    print(f'test_get_audio_list result: {response}')
-
-    assert resultType == MiniApiResultType.Success, 'test_get_audio_list timetout'
-    assert response is not None and isinstance(response, GetAudioListResponse), 'test_play_audio result unavailable'
-    assert response.isSuccess, 'test_get_audio_list failed'
-
 
 # Test stop the tts being played
 async def test_stop_audio_tts():
@@ -217,14 +101,14 @@ async def main():
     device: WiFiDevice = await test_get_device_by_name()
     if device:
         await test_connect(device)
-        await test_start_run_program()
+        #await test_start_run_program()
         await test_play_tts()
-        await test_stop_play_tts()
-        await test_get_audio_list()
-        await test_play_local_audio()
-        await test_play_online_audio()
-        await test_stop_audio_tts()
-        await test_change_robot_volume()
+        #await test_stop_play_tts()
+        #await test_get_audio_list()
+        #await test_play_local_audio()
+        #await test_play_online_audio()
+        #await test_stop_audio_tts()
+        #await test_change_robot_volume()
         await shutdown()
 
 

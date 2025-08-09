@@ -1,0 +1,1624 @@
+2025-08-07 14:15:31,430 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:15:31,441 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:15:40,027 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:15:40,407 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:15:40,417 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:15:42,902 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 161, in scan_for_robot
+    await MiniSdk.start_search_device()
+AttributeError: module 'mini.mini_sdk' has no attribute 'start_search_device'
+
+2025-08-07 14:15:57,881 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:15:58,247 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:15:58,258 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:17:12,029 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:17:12,393 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:17:12,404 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:18:34,980 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 161, in scan_for_robot
+    await MiniSdk.start_search_device()
+AttributeError: module 'mini.mini_sdk' has no attribute 'start_search_device'
+
+2025-08-07 14:18:35,620 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 161, in scan_for_robot
+    await MiniSdk.start_search_device()
+AttributeError: module 'mini.mini_sdk' has no attribute 'start_search_device'
+
+2025-08-07 14:18:54,632 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 161, in scan_for_robot
+    await MiniSdk.start_search_device()
+AttributeError: module 'mini.mini_sdk' has no attribute 'start_search_device'
+
+2025-08-07 14:18:55,556 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 161, in scan_for_robot
+    await MiniSdk.start_search_device()
+AttributeError: module 'mini.mini_sdk' has no attribute 'start_search_device'
+
+2025-08-07 14:19:49,740 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:19:49,752 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:19:49,827 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:19:49,840 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:19:49,854 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:19:49,866 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:20:04,821 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:20:05,183 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:20:05,195 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:20:16,078 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:20:16,088 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:20:16,090 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:20:16,323 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:20:16,425 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:20:16,426 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:20:17,109 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:20:17,180 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:20:17,260 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:20:17,261 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:20:17,262 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:20:17,262 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:20:17,262 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:20:17,263 - websockets.client - DEBUG - > Sec-WebSocket-Key: bDMmT8BlaHOcRG/xgOYKVw==
+2025-08-07 14:20:17,263 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:20:17,264 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:20:17,264 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:20:17,284 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:20:17,285 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:20:17,285 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:20:17 GMT+00:00
+2025-08-07 14:20:17,285 - websockets.client - DEBUG - < Sec-WebSocket-Accept: 0v+9RAC/C4tg0fcC9hBOJFTcmUM=
+2025-08-07 14:20:17,286 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:20:17,286 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:20:17,286 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:20:17,287 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:20:17,343 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:20:17,344 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:20:17,704 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:20:17,705 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:20:29,195 - websockets.client - DEBUG - > TEXT 'CgUKATIYARIGCgRXYXZl&' [21 bytes]
+2025-08-07 14:20:29,195 - mini.channels.websocket_client - INFO - send cmd=1, identify='2', message=actionName: "Wave"
+
+2025-08-07 14:20:33,126 - websockets.client - DEBUG - < TEXT 'CgUKATIYARIDEOkH&' [17 bytes]
+2025-08-07 14:20:33,127 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:20:33,190 - websockets.client - DEBUG - > TEXT 'CgUKATMYARIHCgVIYXBweQ==&' [25 bytes]
+2025-08-07 14:20:33,191 - mini.channels.websocket_client - INFO - send cmd=1, identify='3', message=actionName: "Happy"
+
+2025-08-07 14:20:34,444 - websockets.client - DEBUG - < TEXT 'CgUKATMYARIDEOkH&' [17 bytes]
+2025-08-07 14:20:34,445 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:20:34,514 - websockets.client - DEBUG - > TEXT 'CgUKATQYARIHCgVEYW5jZQ==&' [25 bytes]
+2025-08-07 14:20:34,515 - mini.channels.websocket_client - INFO - send cmd=1, identify='4', message=actionName: "Dance"
+
+2025-08-07 14:20:36,062 - websockets.client - DEBUG - < TEXT 'CgUKATQYARIDEOkH&' [17 bytes]
+2025-08-07 14:20:36,063 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:20:37,295 - websockets.client - DEBUG - > PING fa b9 cc 7b [binary, 4 bytes]
+2025-08-07 14:20:37,297 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:20:37,831 - websockets.client - DEBUG - < PONG fa b9 cc 7b [binary, 4 bytes]
+2025-08-07 14:20:37,832 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:20:43,920 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:20:43,920 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:20:48,284 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 526, in execute_expression
+    response = await PlayExpression(expression_name=request.name).execute()
+TypeError: __init__() got an unexpected keyword argument 'expression_name'
+
+2025-08-07 14:20:50,813 - websockets.client - DEBUG - > TEXT 'CgUKATUYARIKCghUaHVtYnNVcA==&' [29 bytes]
+2025-08-07 14:20:50,814 - mini.channels.websocket_client - INFO - send cmd=1, identify='5', message=actionName: "ThumbsUp"
+
+2025-08-07 14:20:52,867 - websockets.client - DEBUG - < TEXT 'CgUKATUYARIDEOkH&' [17 bytes]
+2025-08-07 14:20:52,868 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:20:54,451 - websockets.client - DEBUG - > TEXT 'CgUKATYYARIJCgdTdHJldGNo&' [25 bytes]
+2025-08-07 14:20:54,452 - mini.channels.websocket_client - INFO - send cmd=1, identify='6', message=actionName: "Stretch"
+
+2025-08-07 14:20:56,216 - websockets.client - DEBUG - < TEXT 'CgUKATYYARIDEOkH&' [17 bytes]
+2025-08-07 14:20:56,217 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:20:57,285 - websockets.client - DEBUG - > PING 63 82 49 a6 [binary, 4 bytes]
+2025-08-07 14:20:57,286 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:20:57,390 - websockets.client - DEBUG - < PONG 63 82 49 a6 [binary, 4 bytes]
+2025-08-07 14:20:57,391 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:21:17,298 - websockets.client - DEBUG - > PING 67 f2 a7 61 [binary, 4 bytes]
+2025-08-07 14:21:17,298 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:21:17,371 - websockets.client - DEBUG - < PONG 67 f2 a7 61 [binary, 4 bytes]
+2025-08-07 14:21:17,372 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:21:37,276 - websockets.client - DEBUG - > PING 50 b9 9c d1 [binary, 4 bytes]
+2025-08-07 14:21:37,277 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:21:37,340 - websockets.client - DEBUG - < PONG 50 b9 9c d1 [binary, 4 bytes]
+2025-08-07 14:21:37,341 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:21:43,935 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:21:43,936 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:21:56,602 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:21:56,602 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:21:56,603 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:21:56,603 - websockets.client - DEBUG - < EOF
+2025-08-07 14:21:56,603 - websockets.client - DEBUG - > EOF
+2025-08-07 14:21:56,604 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:21:56,604 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:21:56,605 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:21:59,644 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:21:59,649 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:23:53,514 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:23:53,527 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:24:08,198 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:24:08,537 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:24:08,548 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:24:18,444 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:24:18,454 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:24:18,455 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:24:18,598 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:24:18,602 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:24:18,603 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:24:19,418 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:24:19,489 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:24:19,527 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:24:19,528 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:24:19,528 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:24:19,528 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:24:19,529 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:24:19,529 - websockets.client - DEBUG - > Sec-WebSocket-Key: FL1f25iJ1ik8ta5gmt89Lg==
+2025-08-07 14:24:19,530 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:24:19,530 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:24:19,531 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:24:19,544 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:24:19,544 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:24:19,545 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:24:19 GMT+00:00
+2025-08-07 14:24:19,545 - websockets.client - DEBUG - < Sec-WebSocket-Accept: YoRZRf6dtHnzpyQ2/MTzXTDrSRw=
+2025-08-07 14:24:19,546 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:24:19,546 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:24:19,546 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:24:19,547 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:24:19,566 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:24:19,567 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:24:19,786 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:24:19,786 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:24:30,033 - websockets.client - DEBUG - > TEXT 'CgUKATIYARIHCgVEYW5jZQ==&' [25 bytes]
+2025-08-07 14:24:30,034 - mini.channels.websocket_client - INFO - send cmd=1, identify='2', message=actionName: "Dance"
+
+2025-08-07 14:24:32,499 - websockets.client - DEBUG - < TEXT 'CgUKATIYARIDEOkH&' [17 bytes]
+2025-08-07 14:24:32,500 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:24:33,701 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 574, in execute_expression
+    response = await PlayExpression(expression_name=request.name).execute()
+TypeError: __init__() got an unexpected keyword argument 'expression_name'
+
+2025-08-07 14:24:35,640 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 574, in execute_expression
+    response = await PlayExpression(expression_name=request.name).execute()
+TypeError: __init__() got an unexpected keyword argument 'expression_name'
+
+2025-08-07 14:24:36,760 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 574, in execute_expression
+    response = await PlayExpression(expression_name=request.name).execute()
+TypeError: __init__() got an unexpected keyword argument 'expression_name'
+
+2025-08-07 14:24:38,633 - websockets.client - DEBUG - > TEXT 'CgUKATMYARIGCgRXYXZl&' [21 bytes]
+2025-08-07 14:24:38,633 - mini.channels.websocket_client - INFO - send cmd=1, identify='3', message=actionName: "Wave"
+
+2025-08-07 14:24:39,519 - websockets.client - DEBUG - > PING 1f f2 b5 b4 [binary, 4 bytes]
+2025-08-07 14:24:39,520 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:24:39,528 - websockets.client - DEBUG - < PONG 1f f2 b5 b4 [binary, 4 bytes]
+2025-08-07 14:24:39,529 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:24:39,725 - websockets.client - DEBUG - < TEXT 'CgUKATMYARIDEOkH&' [17 bytes]
+2025-08-07 14:24:39,726 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:24:39,747 - websockets.client - DEBUG - > TEXT 'CgUKATQYARIHCgVIYXBweQ==&' [25 bytes]
+2025-08-07 14:24:39,747 - mini.channels.websocket_client - INFO - send cmd=1, identify='4', message=actionName: "Happy"
+
+2025-08-07 14:24:41,087 - websockets.client - DEBUG - < TEXT 'CgUKATQYARIDEOkH&' [17 bytes]
+2025-08-07 14:24:41,088 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:24:41,098 - websockets.client - DEBUG - > TEXT 'CgUKATUYARIHCgVEYW5jZQ==&' [25 bytes]
+2025-08-07 14:24:41,099 - mini.channels.websocket_client - INFO - send cmd=1, identify='5', message=actionName: "Dance"
+
+2025-08-07 14:24:42,674 - websockets.client - DEBUG - < TEXT 'CgUKATUYARIDEOkH&' [17 bytes]
+2025-08-07 14:24:42,675 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:24:43,913 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:24:43,914 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:24:48,550 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:24:48,551 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:24:48,552 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:24:48,552 - websockets.client - DEBUG - < EOF
+2025-08-07 14:24:48,553 - websockets.client - DEBUG - > EOF
+2025-08-07 14:24:48,554 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:24:48,554 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:24:48,555 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:24:51,576 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:24:51,578 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:25:12,141 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:25:12,155 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:25:12,637 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:25:12,652 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:25:24,704 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:25:25,604 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:25:25,622 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:25:32,853 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:25:32,862 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:25:32,864 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:25:33,044 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:25:33,091 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:25:33,094 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:25:33,871 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:25:33,962 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:25:34,073 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:25:34,076 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:25:34,077 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:25:34,078 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:25:34,079 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:25:34,081 - websockets.client - DEBUG - > Sec-WebSocket-Key: AY1B/2wBqMgqRmtF9lO5IQ==
+2025-08-07 14:25:34,082 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:25:34,082 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:25:34,083 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:25:34,130 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:25:34,133 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:25:34,134 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:25:34 GMT+00:00
+2025-08-07 14:25:34,134 - websockets.client - DEBUG - < Sec-WebSocket-Accept: XDcJXGyXt4TC78AgJ27P72iPcus=
+2025-08-07 14:25:34,135 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:25:34,137 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:25:34,137 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:25:34,138 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:25:34,164 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:25:34,165 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:25:34,413 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:25:34,414 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:25:43,918 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:25:44,224 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:25:54,144 - websockets.client - DEBUG - > PING 53 8f 32 f9 [binary, 4 bytes]
+2025-08-07 14:25:54,334 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:25:54,393 - websockets.client - DEBUG - < PONG 53 8f 32 f9 [binary, 4 bytes]
+2025-08-07 14:25:54,394 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:26:01,733 - websockets.client - DEBUG - > TEXT 'CgUKATIYARIHCgVEYW5jZQ==&' [25 bytes]
+2025-08-07 14:26:01,736 - mini.channels.websocket_client - INFO - send cmd=1, identify='2', message=actionName: "Dance"
+
+2025-08-07 14:26:04,487 - websockets.client - DEBUG - < TEXT 'CgUKATIYARIDEOkH&' [17 bytes]
+2025-08-07 14:26:04,489 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:26:06,552 - websockets.client - DEBUG - > TEXT 'CgUKATMYARIHCgVIYXBweQ==&' [25 bytes]
+2025-08-07 14:26:06,553 - mini.channels.websocket_client - INFO - send cmd=1, identify='3', message=actionName: "Happy"
+
+2025-08-07 14:26:07,756 - websockets.client - DEBUG - < TEXT 'CgUKATMYARIDEOkH&' [17 bytes]
+2025-08-07 14:26:07,759 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:26:09,998 - websockets.client - DEBUG - > TEXT 'CgUKATQYChIKCghmYWNlXzAwNQ==&' [29 bytes]
+2025-08-07 14:26:09,999 - mini.channels.websocket_client - INFO - send cmd=10, identify='4', message=expressName: "face_005"
+
+2025-08-07 14:26:13,634 - websockets.client - DEBUG - < TEXT 'CgUKATQYChICCAE=&' [17 bytes]
+2025-08-07 14:26:13,635 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:26:14,156 - websockets.client - DEBUG - > PING a3 12 f3 e0 [binary, 4 bytes]
+2025-08-07 14:26:14,157 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:26:14,298 - websockets.client - DEBUG - < PONG a3 12 f3 e0 [binary, 4 bytes]
+2025-08-07 14:26:14,299 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:26:17,553 - websockets.client - DEBUG - > TEXT 'CgUKATUYChIKCghmYWNlXzAzOQ==&' [29 bytes]
+2025-08-07 14:26:17,554 - mini.channels.websocket_client - INFO - send cmd=10, identify='5', message=expressName: "face_039"
+
+2025-08-07 14:26:22,196 - websockets.client - DEBUG - < TEXT 'CgUKATUYChICCAE=&' [17 bytes]
+2025-08-07 14:26:22,197 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:26:25,570 - websockets.client - DEBUG - > TEXT 'CgUKATYYChIKCghmYWNlXzAyMA==&' [29 bytes]
+2025-08-07 14:26:25,571 - mini.channels.websocket_client - INFO - send cmd=10, identify='6', message=expressName: "face_020"
+
+2025-08-07 14:26:25,866 - websockets.client - DEBUG - < TEXT 'CgUKATYYChIDEOkH&' [17 bytes]
+2025-08-07 14:26:25,867 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 10
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:26:30,518 - websockets.client - DEBUG - > TEXT 'CgUKATcYChIKCghmYWNlXzAyNQ==&' [29 bytes]
+2025-08-07 14:26:30,521 - mini.channels.websocket_client - INFO - send cmd=10, identify='7', message=expressName: "face_025"
+
+2025-08-07 14:26:30,707 - websockets.client - DEBUG - < TEXT 'CgUKATcYChIDEOkH&' [17 bytes]
+2025-08-07 14:26:30,709 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "7"
+  command: 10
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:26:32,048 - websockets.client - DEBUG - > TEXT 'CgUKATgYChIKCghmYWNlXzAxMA==&' [29 bytes]
+2025-08-07 14:26:32,049 - mini.channels.websocket_client - INFO - send cmd=10, identify='8', message=expressName: "face_010"
+
+2025-08-07 14:26:34,169 - websockets.client - DEBUG - > PING f0 ba a7 6b [binary, 4 bytes]
+2025-08-07 14:26:34,172 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:26:34,361 - websockets.client - DEBUG - < PONG f0 ba a7 6b [binary, 4 bytes]
+2025-08-07 14:26:34,363 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:26:34,953 - websockets.client - DEBUG - < TEXT 'CgUKATgYChICCAE=&' [17 bytes]
+2025-08-07 14:26:34,955 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "8"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:26:38,711 - websockets.client - DEBUG - > TEXT 'CgUKATkYChIKCghmYWNlXzAwNQ==&' [29 bytes]
+2025-08-07 14:26:38,712 - mini.channels.websocket_client - INFO - send cmd=10, identify='9', message=expressName: "face_005"
+
+2025-08-07 14:26:42,366 - websockets.client - DEBUG - < TEXT 'CgUKATkYChICCAE=&' [17 bytes]
+2025-08-07 14:26:42,368 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "9"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:26:44,007 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:26:44,008 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:26:44,986 - websockets.client - DEBUG - > TEXT 'CgYKAjEwGAoSCgoIZmFjZV8wMzA=&' [29 bytes]
+2025-08-07 14:26:44,986 - mini.channels.websocket_client - INFO - send cmd=10, identify='10', message=expressName: "face_030"
+
+2025-08-07 14:26:46,770 - websockets.client - DEBUG - < TEXT 'CgYKAjEwGAoSAggB&' [17 bytes]
+2025-08-07 14:26:46,771 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "10"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:26:51,789 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:26:51,790 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:26:51,791 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:26:51,792 - websockets.client - DEBUG - < EOF
+2025-08-07 14:26:51,792 - websockets.client - DEBUG - > EOF
+2025-08-07 14:26:51,793 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:26:51,793 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:26:51,794 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:26:51,965 - mini.channels.websocket_client - WARNING - client is not alive
+2025-08-07 14:26:51,997 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 651, in execute_action
+    response = await PlayAction(action_name=request.name).execute()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\api_action.py", line 52, in execute
+    return await self.send(cmd_id, request, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\base_api.py", line 66, in send
+    result = await socket.send_msg(cmd_id, message, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 287, in send_msg
+    raise RuntimeError("no connection!")
+RuntimeError: no connection!
+
+2025-08-07 14:26:54,859 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:26:54,871 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:28:20,083 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:28:20,788 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:28:20,811 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:29:42,175 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:29:42,816 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:29:42,831 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:30:10,232 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:30:10,251 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:30:10,448 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:30:10,471 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:30:14,960 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:30:14,970 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:30:14,972 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:30:15,151 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:30:15,188 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:30:15,189 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:30:15,981 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:30:16,067 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:30:16,284 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:30:16,286 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:30:16,287 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:30:16,288 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:30:16,289 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:30:16,290 - websockets.client - DEBUG - > Sec-WebSocket-Key: Zg5ic9X1GapkQx7KsxXyFw==
+2025-08-07 14:30:16,291 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:30:16,292 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:30:16,293 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:30:16,797 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:30:16,798 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:30:16,799 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:30:17 GMT+00:00
+2025-08-07 14:30:16,799 - websockets.client - DEBUG - < Sec-WebSocket-Accept: VAfZe+/gyKOtbOjsdx1jBDOUrnc=
+2025-08-07 14:30:16,800 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:30:16,800 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:30:16,801 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:30:16,802 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:30:16,847 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:30:16,848 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:30:17,406 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:30:17,407 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:30:25,804 - websockets.client - DEBUG - < TEXT 'CgUKATEYARICCAE=&' [17 bytes]
+2025-08-07 14:30:25,805 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:30:25,806 - mini.channels.websocket_client - WARNING - 2.ignore:cmd=1, cmd no handlers.
+2025-08-07 14:30:30,909 - websockets.client - DEBUG - > TEXT 'CgUKATIYDxIQCgxkYW5jZV8wMDA2ZW4QAQ==&' [37 bytes]
+2025-08-07 14:30:30,909 - mini.channels.websocket_client - INFO - send cmd=15, identify='2', message=name: "dance_0006en"
+eventType: 1
+
+2025-08-07 14:30:36,820 - websockets.client - DEBUG - > PING 25 33 29 93 [binary, 4 bytes]
+2025-08-07 14:30:36,821 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:30:36,964 - websockets.client - DEBUG - < PONG 25 33 29 93 [binary, 4 bytes]
+2025-08-07 14:30:36,965 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:30:43,908 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:30:43,908 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:30:48,663 - websockets.client - DEBUG - > TEXT 'CgUKATMYDxIOCgpkYW5jZV8wMDAxEAE=&' [33 bytes]
+2025-08-07 14:30:48,665 - mini.channels.websocket_client - INFO - send cmd=15, identify='3', message=name: "dance_0001"
+eventType: 1
+
+2025-08-07 14:30:49,968 - websockets.client - DEBUG - < TEXT 'CgUKATMYDxIDGOkH&' [17 bytes]
+2025-08-07 14:30:49,969 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 15
+}
+bodyData: "\030\351\007"
+
+2025-08-07 14:30:51,279 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 488, in execute_mouth_lamp_action
+    color_map = {"red": MouthLampColor.RED, "green": MouthLampColor.GREEN, "blue": MouthLampColor.BLUE}
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\enum.py", line 429, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BLUE
+
+2025-08-07 14:30:56,829 - websockets.client - DEBUG - > PING 97 d8 dc ff [binary, 4 bytes]
+2025-08-07 14:30:56,830 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:30:56,855 - websockets.client - DEBUG - < PONG 97 d8 dc ff [binary, 4 bytes]
+2025-08-07 14:30:56,857 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:31:16,821 - websockets.client - DEBUG - > PING d6 76 c7 d8 [binary, 4 bytes]
+2025-08-07 14:31:16,822 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:31:16,908 - websockets.client - DEBUG - < PONG d6 76 c7 d8 [binary, 4 bytes]
+2025-08-07 14:31:16,909 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:31:36,831 - websockets.client - DEBUG - > PING '#\x0ck@' [text, 4 bytes]
+2025-08-07 14:31:36,832 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:31:36,875 - websockets.client - DEBUG - < PONG '#\x0ck@' [text, 4 bytes]
+2025-08-07 14:31:36,875 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:31:43,917 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:31:43,917 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:31:52,323 - websockets.client - DEBUG - < TEXT 'CgUKATIYDxICEAE=&' [17 bytes]
+2025-08-07 14:31:52,323 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 15
+}
+bodyData: "\020\001"
+
+2025-08-07 14:31:52,324 - mini.channels.websocket_client - WARNING - 2.ignore:cmd=15, cmd no handlers.
+2025-08-07 14:31:56,836 - websockets.client - DEBUG - > PING bc 79 02 1f [binary, 4 bytes]
+2025-08-07 14:31:56,837 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:31:56,981 - websockets.client - DEBUG - < PONG bc 79 02 1f [binary, 4 bytes]
+2025-08-07 14:31:56,982 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:31:57,308 - websockets.client - DEBUG - > TEXT 'CgUKATQYARIGCgRXYXZl&' [21 bytes]
+2025-08-07 14:31:57,309 - mini.channels.websocket_client - INFO - send cmd=1, identify='4', message=actionName: "Wave"
+
+2025-08-07 14:32:01,340 - websockets.client - DEBUG - < TEXT 'CgUKATQYARIDEOkH&' [17 bytes]
+2025-08-07 14:32:01,342 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 1
+}
+bodyData: "\020\351\007"
+
+2025-08-07 14:32:03,786 - websockets.client - DEBUG - > TEXT 'CgUKATUYChIKCghjb2RlbWFvMQ==&' [29 bytes]
+2025-08-07 14:32:03,787 - mini.channels.websocket_client - INFO - send cmd=10, identify='5', message=expressName: "codemao1"
+
+2025-08-07 14:32:09,005 - websockets.client - DEBUG - < TEXT 'CgUKATUYChICCAE=&' [17 bytes]
+2025-08-07 14:32:09,007 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:32:13,944 - websockets.client - DEBUG - > TEXT 'CgUKATYYDxIOCgpkYW5jZV8wMDAxEAE=&' [33 bytes]
+2025-08-07 14:32:13,945 - mini.channels.websocket_client - INFO - send cmd=15, identify='6', message=name: "dance_0001"
+eventType: 1
+
+2025-08-07 14:32:16,834 - websockets.client - DEBUG - > PING a3 ce 79 d4 [binary, 4 bytes]
+2025-08-07 14:32:16,838 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:32:16,858 - websockets.client - DEBUG - < PONG a3 ce 79 d4 [binary, 4 bytes]
+2025-08-07 14:32:16,859 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:32:17,519 - websockets.client - DEBUG - < TEXT 'CgUKATYYDxIDGOkH&' [17 bytes]
+2025-08-07 14:32:17,520 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 15
+}
+bodyData: "\030\351\007"
+
+2025-08-07 14:32:19,270 - websockets.client - DEBUG - > TEXT 'CgUKATcYDxIQCgxkYW5jZV8wMDA0ZW4QAQ==&' [37 bytes]
+2025-08-07 14:32:19,271 - mini.channels.websocket_client - INFO - send cmd=15, identify='7', message=name: "dance_0004en"
+eventType: 1
+
+2025-08-07 14:32:36,846 - websockets.client - DEBUG - > PING 0b 6e cc 26 [binary, 4 bytes]
+2025-08-07 14:32:36,847 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:32:37,090 - websockets.client - DEBUG - < PONG 0b 6e cc 26 [binary, 4 bytes]
+2025-08-07 14:32:37,091 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:32:43,937 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:32:43,937 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:32:56,870 - websockets.client - DEBUG - > PING 60 d4 51 e8 [binary, 4 bytes]
+2025-08-07 14:32:56,875 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:32:57,127 - websockets.client - DEBUG - < PONG 60 d4 51 e8 [binary, 4 bytes]
+2025-08-07 14:32:57,168 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:33:03,744 - websockets.client - DEBUG - < TEXT 'CgUKATcYDxICEAE=&' [17 bytes]
+2025-08-07 14:33:03,746 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "7"
+  command: 15
+}
+bodyData: "\020\001"
+
+2025-08-07 14:33:16,982 - websockets.client - DEBUG - > PING 94 7e 19 f9 [binary, 4 bytes]
+2025-08-07 14:33:16,984 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:33:17,473 - websockets.client - DEBUG - < PONG 94 7e 19 f9 [binary, 4 bytes]
+2025-08-07 14:33:17,474 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:33:36,976 - websockets.client - DEBUG - > PING ba 99 21 11 [binary, 4 bytes]
+2025-08-07 14:33:36,978 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:33:37,083 - websockets.client - DEBUG - < PONG ba 99 21 11 [binary, 4 bytes]
+2025-08-07 14:33:37,085 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:33:43,901 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:33:43,902 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:33:56,995 - websockets.client - DEBUG - > PING f6 b7 36 57 [binary, 4 bytes]
+2025-08-07 14:33:56,996 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:33:57,114 - websockets.client - DEBUG - < PONG f6 b7 36 57 [binary, 4 bytes]
+2025-08-07 14:33:57,115 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:34:17,013 - websockets.client - DEBUG - > PING 07 e7 f9 a2 [binary, 4 bytes]
+2025-08-07 14:34:17,014 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:34:17,020 - websockets.client - DEBUG - < PONG 07 e7 f9 a2 [binary, 4 bytes]
+2025-08-07 14:34:17,020 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:34:37,015 - websockets.client - DEBUG - > PING 9b 36 86 28 [binary, 4 bytes]
+2025-08-07 14:34:37,016 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:34:37,096 - websockets.client - DEBUG - < PONG 9b 36 86 28 [binary, 4 bytes]
+2025-08-07 14:34:37,097 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:34:43,898 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:34:43,898 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:34:56,987 - websockets.client - DEBUG - > PING '~/\x14|' [text, 4 bytes]
+2025-08-07 14:34:56,990 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:34:57,076 - websockets.client - DEBUG - < PONG '~/\x14|' [text, 4 bytes]
+2025-08-07 14:34:57,076 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:35:17,013 - websockets.client - DEBUG - > PING 76 fd 12 6a [binary, 4 bytes]
+2025-08-07 14:35:17,014 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:35:17,180 - websockets.client - DEBUG - < PONG 76 fd 12 6a [binary, 4 bytes]
+2025-08-07 14:35:17,181 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:35:30,924 - mini.channels.websocket_client - WARNING - recv response  failure: 
+2025-08-07 14:35:37,001 - websockets.client - DEBUG - > PING 7b 4d 20 97 [binary, 4 bytes]
+2025-08-07 14:35:37,011 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:35:37,135 - websockets.client - DEBUG - < PONG 7b 4d 20 97 [binary, 4 bytes]
+2025-08-07 14:35:37,137 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:35:43,901 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:35:43,902 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:35:57,011 - websockets.client - DEBUG - > PING f8 c7 96 c0 [binary, 4 bytes]
+2025-08-07 14:35:57,013 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:35:57,019 - websockets.client - DEBUG - < PONG f8 c7 96 c0 [binary, 4 bytes]
+2025-08-07 14:35:57,020 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:36:16,996 - websockets.client - DEBUG - > PING '\r\x14\x14\x0c' [text, 4 bytes]
+2025-08-07 14:36:16,998 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:36:17,061 - websockets.client - DEBUG - < PONG '\r\x14\x14\x0c' [text, 4 bytes]
+2025-08-07 14:36:17,062 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:36:37,004 - websockets.client - DEBUG - > PING a4 af 00 11 [binary, 4 bytes]
+2025-08-07 14:36:37,005 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:36:37,037 - websockets.client - DEBUG - < PONG a4 af 00 11 [binary, 4 bytes]
+2025-08-07 14:36:37,038 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:36:43,965 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:36:43,967 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:36:57,004 - websockets.client - DEBUG - > PING 0c 4c 35 ef [binary, 4 bytes]
+2025-08-07 14:36:57,005 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:36:57,090 - websockets.client - DEBUG - < PONG 0c 4c 35 ef [binary, 4 bytes]
+2025-08-07 14:36:57,091 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:37:01,471 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:37:01,488 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:37:17,020 - websockets.client - DEBUG - > PING 70 8b b2 0e [binary, 4 bytes]
+2025-08-07 14:37:17,022 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:37:17,148 - websockets.client - DEBUG - < PONG 70 8b b2 0e [binary, 4 bytes]
+2025-08-07 14:37:17,150 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:37:24,599 - websockets.client - DEBUG - > TEXT 'CgUKATgYDxIQCgxkYW5jZV8wMDA0ZW4QAQ==&' [37 bytes]
+2025-08-07 14:37:24,599 - mini.channels.websocket_client - INFO - send cmd=15, identify='8', message=name: "dance_0004en"
+eventType: 1
+
+2025-08-07 14:37:37,038 - websockets.client - DEBUG - > PING 01 10 1a af [binary, 4 bytes]
+2025-08-07 14:37:37,039 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:37:37,049 - websockets.client - DEBUG - < PONG 01 10 1a af [binary, 4 bytes]
+2025-08-07 14:37:37,050 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:37:43,897 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:37:43,898 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:37:45,813 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:37:45,814 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:37:45,815 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:37:45,815 - websockets.client - DEBUG - < EOF
+2025-08-07 14:37:45,815 - websockets.client - DEBUG - > EOF
+2025-08-07 14:37:45,816 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:37:45,816 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:37:45,817 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:37:48,871 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:37:48,876 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:37:49,626 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:37:49,648 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:37:54,566 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:37:54,577 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:37:54,579 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:37:54,716 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:37:54,762 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:37:54,777 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:37:55,587 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:37:56,948 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:37:57,032 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:37:57,038 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:37:57,040 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:37:57,042 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:37:57,045 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:37:57,046 - websockets.client - DEBUG - > Sec-WebSocket-Key: u++mUZ2tGKKD+25jp00QXQ==
+2025-08-07 14:37:57,048 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:37:57,049 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:37:57,050 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:37:57,090 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:37:57,091 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:37:57,093 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:37:57 GMT+00:00
+2025-08-07 14:37:57,094 - websockets.client - DEBUG - < Sec-WebSocket-Accept: +DXqM40uBQfUrw/jej7fuwyiI4w=
+2025-08-07 14:37:57,096 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:37:57,097 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:37:57,098 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:37:57,100 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:37:57,275 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:37:57,277 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:37:57,514 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:37:57,516 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:38:08,879 - websockets.client - DEBUG - > TEXT 'CgUKATIYDxIQCgxkYW5jZV8wMDA0ZW4QAQ==&' [37 bytes]
+2025-08-07 14:38:08,881 - mini.channels.websocket_client - INFO - send cmd=15, identify='2', message=name: "dance_0004en"
+eventType: 1
+
+2025-08-07 14:38:17,120 - websockets.client - DEBUG - > PING 3d c4 ee 54 [binary, 4 bytes]
+2025-08-07 14:38:17,122 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:38:17,146 - websockets.client - DEBUG - < PONG 3d c4 ee 54 [binary, 4 bytes]
+2025-08-07 14:38:17,147 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:38:37,137 - websockets.client - DEBUG - > PING eb d0 4c 3e [binary, 4 bytes]
+2025-08-07 14:38:37,139 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:38:37,221 - websockets.client - DEBUG - < PONG eb d0 4c 3e [binary, 4 bytes]
+2025-08-07 14:38:37,224 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:38:42,560 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:38:42,579 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:38:43,896 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:38:43,897 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:38:45,796 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:38:46,380 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:38:46,397 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:38:55,000 - websockets.client - DEBUG - < TEXT 'CgUKATIYDxICEAE=&' [17 bytes]
+2025-08-07 14:38:55,002 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 15
+}
+bodyData: "\020\001"
+
+2025-08-07 14:38:55,061 - websockets.client - DEBUG - > TEXT 'CgUKATMYIQ==&' [13 bytes]
+2025-08-07 14:38:55,062 - mini.channels.websocket_client - INFO - send cmd=33, identify='3', message=
+2025-08-07 14:38:55,465 - websockets.client - DEBUG - < TEXT 'CgUKATMYIRLRHQoFCgMwMDEKDgoMMDAxX2N1c3RvbV92Cg0...0KC3dfc3RhbmRfMDEwEAE=&' [5073 bytes]
+2025-08-07 14:38:55,467 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 33
+}
+bodyData: "\n\005\n\003001\n\016\n\014001_custom_v\n\r\n\013001_tapHead\n\005\n\003002\n\007\n\005002_1\n\005\n\003003\n\005\n\003004\n\005\n\003005\n\005\n\003006\n\005\n\003007\n\007\n\005007_1\n\005\n\003008\n\005\n\003009\n\025\n\003010\022\006\345\244\247\347\254\221\032\006\345\244\247\347\254\221\n\025\n\003011\022\006\347\202\271\345\244\264\032\006\347\202\271\345\244\264\n\t\n\007011_1_1\n\033\n\003012\022\t\344\277\257\345\215\247\346\222\221\032\t\344\277\257\345\215\247\346\222\221\n\007\n\005012_1\n\t\n\007012_1_1\n\t\n\007012_1_2\n\025\n\003013\022\006\345\212\237\345\244\253\032\006\345\212\237\345\244\253\n\005\n\003014\n\025\n\003015\022\006\346\254\242\350\277\216\032\006\346\254\242\350\277\216\n!\n\003016\022\014\351\207\221\351\270\241\347\213\254\347\253\213\032\014\351\207\221\351\270\241\347\213\254\347\253\213\n\007\n\005016_1\n\007\n\005016_2\n\033\n\003017\022\t\344\270\276\345\217\214\346\211\213\032\t\344\270\276\345\217\214\346\211\213\n\007\n\005017_1\n\033\n\003018\022\t\346\212\254\345\217\263\350\205\277\032\t\346\212\254\345\217\263\350\205\277\n\007\n\005018_1\n\007\n\005018_2\n\033\n\003019\022\t\346\212\254\345\267\246\350\205\277\032\t\346\212\254\345\267\246\350\205\277\n\007\n\005019_1\n\007\n\005019_2\n\025\n\003021\022\006\345\274\257\350\205\260\032\006\345\274\257\350\205\260\n\007\n\005021_1\n\007\n\005021_2\n\005\n\003022\n\007\n\005022_1\n\t\n\007022_1_1\n\t\n\007022_1_2\n\t\n\007022_1_3\n\007\n\005022_2\n\t\n\007022_2_1\n\t\n\007022_2_2\n\007\n\005022_3\n\t\n\007022_3_1\n\005\n\003023\n\007\n\005023_1\n\t\n\007023_1_1\n\t\n\007023_1_2\n\t\n\007023_1_3\n\007\n\005023_2\n\t\n\007023_2_1\n\t\n\007023_2_2\n\007\n\005023_3\n\t\n\007023_3_1\n\025\n\003024\022\006\347\221\234\344\274\275\032\006\347\221\234\344\274\275\n\007\n\005024_1\n\007\n\005024_2\n\005\n\003025\n\007\n\005025_1\n\t\n\007025_1_1\n\005\n\003026\n\007\n\005026_1\n\t\n\007026_1_1\n\025\n\003027\022\006\345\235\220\344\270\213\032\006\345\235\220\344\270\213\n\007\n\005027_1\n\014\n\n027_face_v\n\005\n\003028\n\005\n\003029\n\005\n\003030\n\005\n\003031\n\005\n\003037\n\t\n\007037_1_1\n\005\n\003038\n\t\n\007038_1_1\n\005\n\003039\n\010\n\00640_1_1\n\010\n\00641_1_1\n\010\n\00642_1_1\n\013\n\tDrive_001\n\013\n\tDrive_002\n\013\n\tDrive_003\n\013\n\tDrive_004\n\013\n\tDrive_005\n\013\n\tDrive_006\n\013\n\tDrive_007\n\013\n\tDrive_008\n\013\n\tDrive_009\n\013\n\tDrive_010\n\013\n\tDrive_011\n\013\n\tDrive_012\n\013\n\tDrive_013\n\r\n\013Drive_013_1\n\013\n\tDrive_014\n\013\n\tDrive_015\n\013\n\tDrive_016\n\013\n\tDrive_017\n\013\n\tDrive_018\n\013\n\tDrive_019\n\013\n\tDrive_024\n(\n\020Surveillance_001\022\t\346\211\223\346\213\233\345\221\274\032\t\346\211\223\346\213\233\345\221\274\n\"\n\020Surveillance_003\022\006\346\217\241\346\211\213\032\006\346\217\241\346\211\213\n\"\n\020Surveillance_004\022\006\351\243\236\345\220\273\032\006\351\243\236\345\220\273\n\"\n\020Surveillance_006\022\006\345\215\226\350\220\214\032\006\345\215\226\350\220\214\n\021\n\017act_cute_avatar\n\014\n\naction_002\n\014\n\naction_003\n\014\n\naction_004\n\014\n\naction_005\n\014\n\naction_006\n\014\n\naction_007\n\014\n\naction_008\n\014\n\naction_009\n\014\n\naction_010\n\014\n\naction_011\n\014\n\naction_012\n\014\n\naction_013\n\014\n\naction_014\n\014\n\naction_015\n\014\n\naction_016\n\014\n\naction_017\n\014\n\naction_018\n\014\n\naction_019\n\014\n\naction_020\n\007\n\005aging\n\021\n\017air_kiss_avatar\n\t\n\007balance\n\r\n\013boc_goodbye\n\r\n\013boc_welcome\n\014\n\nbow_avatar\n\t\n\007current\n\017\n\rdance_00011en\n\016\n\014dance_0001en\n\016\n\014dance_0002en\n\016\n\014dance_0003en\n\016\n\014dance_0004en\n\016\n\014dance_0005en\n\014\n\ndance_0006\n\016\n\014dance_0006en\n\016\n\014dance_0007en\n\016\n\014dance_0008en\n\016\n\014dance_0009en\n\016\n\014dance_0010en\n\016\n\014dance_0011en\n\013\n\tface_001b\n\013\n\tface_003b\n\n\n\010face_005\n\n\n\010face_007\n\n\n\010face_008\n\n\n\010face_010\n\n\n\010face_011\n\n\n\010face_014\n\n\n\010face_015\n\013\n\tface_018a\n\013\n\tface_018b\n\013\n\tface_019b\n\013\n\tface_022a\n\013\n\tface_022c\n\013\n\tface_026b\n\013\n\tface_028a\n\013\n\tface_028b\n\n\n\010face_029\n\n\n\010face_030\n\n\n\010face_035\n\n\n\010face_036\n\n\n\010face_037\n\n\n\010face_039\n\010\n\006gongxi\n\022\n\020handshake_avatar\n\014\n\nhug_avatar\n\014\n\njointcheck\n\025\n\023move_forward_avatar\n\020\n\016photograph_001\n\020\n\016photograph_002\n\020\n\016photograph_003\n\020\n\016photograph_004\n\020\n\016photograph_009\n\020\n\016photograph_010\n\020\n\016photograph_011\n\020\n\016photograph_012\n\020\n\016photograph_013\n\020\n\016photograph_014\n\020\n\016photograph_015\n\020\n\016photograph_016\n\020\n\016photograph_017\n\020\n\016photograph_018\n\020\n\016photograph_019\n\020\n\016photograph_020\n\020\n\016photograph_022\n\017\n\rrandom_short1\n\037\n\rrandom_short2\022\006\346\213\245\346\212\261\032\006\346\213\245\346\212\261\n%\n\rrandom_short3\022\t\346\214\245\345\267\246\346\211\213\032\t\346\214\245\345\267\246\346\211\213\n\021\n\017random_short3_1\n%\n\rrandom_short4\022\t\346\214\245\345\217\263\346\211\213\032\t\346\214\245\345\217\263\346\211\213\n\021\n\017random_short4_1\n\017\n\rrandom_short5\n\005\n\003rap\n\014\n\nreboot_001\n\014\n\nreboot_003\n\014\n\nreboot_004\n\022\n\020say_hello_avatar\n\017\n\rsleepmode_001\n\017\n\rsleepmode_002\n\016\n\014speakingAct1\n\017\n\rspeakingAct10\n\017\n\rspeakingAct11\n\017\n\rspeakingAct12\n\017\n\rspeakingAct13\n\017\n\rspeakingAct14\n\017\n\rspeakingAct15\n\017\n\rspeakingAct16\n\017\n\rspeakingAct17\n\016\n\014speakingAct2\n\016\n\014speakingAct3\n\016\n\014speakingAct4\n\016\n\014speakingAct5\n\016\n\014speakingAct6\n\016\n\014speakingAct7\n\016\n\014speakingAct8\n\016\n\014speakingAct9\n\n\n\010stand_up\n\022\n\020standbysquat_001\n\022\n\020standbysquat_002\n\026\n\024streaming_media_001a\n\026\n\024streaming_media_001b\n\026\n\024streaming_media_002a\n\026\n\024streaming_media_002b\n\022\n\020turn_left_avatar\n\023\n\021turn_right_avatar\n\014\n\nw_head_001\n\014\n\nw_head_002\n\014\n\nw_head_003\n\016\n\014w_head_004_v\n\016\n\014w_head_005_v\n\016\n\014w_head_006_v\n\016\n\014w_head_007_v\n\016\n\014w_head_008_v\n\016\n\014w_head_009_v\n\016\n\014w_head_010_v\n\014\n\nw_head_011\n\014\n\nw_head_012\n\014\n\nw_head_013\n\014\n\nw_head_014\n\014\n\nw_head_015\n\014\n\nw_head_016\n\014\n\nw_head_017\n\r\n\013w_stand_001\n\r\n\013w_stand_002\n\r\n\013w_stand_003\n\r\n\013w_stand_004\n\r\n\013w_stand_005\n\r\n\013w_stand_006\n\r\n\013w_stand_007\n\r\n\013w_stand_008\n\r\n\013w_stand_009\n\r\n\013w_stand_010\020\001"
+
+2025-08-07 14:38:55,475 - fastapi_server - WARNING - Could not get real action list: replace
+2025-08-07 14:38:57,153 - websockets.client - DEBUG - > PING 2b 86 75 7b [binary, 4 bytes]
+2025-08-07 14:38:57,156 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:38:57,184 - websockets.client - DEBUG - < PONG 2b 86 75 7b [binary, 4 bytes]
+2025-08-07 14:38:57,186 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:39:02,999 - websockets.client - DEBUG - > TEXT 'CgUKATQYChIKCghjb2RlbWFvMg==&' [29 bytes]
+2025-08-07 14:39:02,999 - mini.channels.websocket_client - INFO - send cmd=10, identify='4', message=expressName: "codemao2"
+
+2025-08-07 14:39:05,473 - websockets.client - DEBUG - < TEXT 'CgUKATQYChICCAE=&' [17 bytes]
+2025-08-07 14:39:05,475 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:39:06,056 - websockets.client - DEBUG - > TEXT 'CgUKATUYChIKCghjb2RlbWFvMw==&' [29 bytes]
+2025-08-07 14:39:06,057 - mini.channels.websocket_client - INFO - send cmd=10, identify='5', message=expressName: "codemao3"
+
+2025-08-07 14:39:09,954 - websockets.client - DEBUG - > TEXT 'CgUKATYYChIKCghjb2RlbWFvNA==&' [29 bytes]
+2025-08-07 14:39:09,955 - mini.channels.websocket_client - INFO - send cmd=10, identify='6', message=expressName: "codemao4"
+
+2025-08-07 14:39:10,594 - websockets.client - DEBUG - < TEXT 'CgUKATUYChIDEO0H&' [17 bytes]
+2025-08-07 14:39:10,596 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 10
+}
+bodyData: "\020\355\007"
+
+2025-08-07 14:39:13,336 - websockets.client - DEBUG - > TEXT 'CgUKATcYChIKCghjb2RlbWFvNQ==&' [29 bytes]
+2025-08-07 14:39:13,337 - mini.channels.websocket_client - INFO - send cmd=10, identify='7', message=expressName: "codemao5"
+
+2025-08-07 14:39:13,778 - websockets.client - DEBUG - < TEXT 'CgUKATYYChIDEO0H&' [17 bytes]
+2025-08-07 14:39:13,780 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 10
+}
+bodyData: "\020\355\007"
+
+2025-08-07 14:39:13,782 - mini.channels.websocket_client - WARNING - 1.ignore: cmd=10, cmd no handlers
+2025-08-07 14:39:16,328 - websockets.client - DEBUG - < TEXT 'CgUKATcYChICCAE=&' [17 bytes]
+2025-08-07 14:39:16,329 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "7"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:39:16,375 - websockets.client - DEBUG - > TEXT 'CgUKATgYChILCgljb2RlbWFvMTU=&' [29 bytes]
+2025-08-07 14:39:16,376 - mini.channels.websocket_client - INFO - send cmd=10, identify='8', message=expressName: "codemao15"
+
+2025-08-07 14:39:17,158 - websockets.client - DEBUG - > PING a0 a1 59 af [binary, 4 bytes]
+2025-08-07 14:39:17,160 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:39:17,303 - websockets.client - DEBUG - < PONG a0 a1 59 af [binary, 4 bytes]
+2025-08-07 14:39:17,305 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:39:18,589 - websockets.client - DEBUG - < TEXT 'CgUKATgYChICCAE=&' [17 bytes]
+2025-08-07 14:39:18,590 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "8"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:39:19,455 - websockets.client - DEBUG - > TEXT 'CgUKATkYChIQCg53X2Jhc2ljXzAwMTJfMQ==&' [37 bytes]
+2025-08-07 14:39:19,456 - mini.channels.websocket_client - INFO - send cmd=10, identify='9', message=expressName: "w_basic_0012_1"
+
+2025-08-07 14:39:24,420 - websockets.client - DEBUG - > TEXT 'CgYKAjEwGAESDAoKYWN0aW9uXzAxNg==&' [33 bytes]
+2025-08-07 14:39:24,421 - mini.channels.websocket_client - INFO - send cmd=1, identify='10', message=actionName: "action_016"
+
+2025-08-07 14:39:24,646 - websockets.client - DEBUG - < TEXT 'CgUKATkYChICCAE=&' [17 bytes]
+2025-08-07 14:39:24,648 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "9"
+  command: 10
+}
+bodyData: "\010\001"
+
+2025-08-07 14:39:28,432 - websockets.client - DEBUG - > TEXT 'CgYKAjExGAESDAoKYWN0aW9uXzAxNg==&' [33 bytes]
+2025-08-07 14:39:28,433 - mini.channels.websocket_client - INFO - send cmd=1, identify='11', message=actionName: "action_016"
+
+2025-08-07 14:39:29,008 - websockets.client - DEBUG - < TEXT 'CgYKAjEwGAESAxCUTg==&' [21 bytes]
+2025-08-07 14:39:29,010 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "10"
+  command: 1
+}
+bodyData: "\020\224N"
+
+2025-08-07 14:39:29,065 - websockets.client - DEBUG - > TEXT 'CgYKAjEyGAESDAoKYWN0aW9uXzAxNg==&' [33 bytes]
+2025-08-07 14:39:29,066 - mini.channels.websocket_client - INFO - send cmd=1, identify='12', message=actionName: "action_016"
+
+2025-08-07 14:39:29,751 - websockets.client - DEBUG - < TEXT 'CgYKAjExGAESAxCUTg==&' [21 bytes]
+2025-08-07 14:39:29,753 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "11"
+  command: 1
+}
+bodyData: "\020\224N"
+
+2025-08-07 14:39:29,754 - mini.channels.websocket_client - WARNING - 1.ignore: cmd=1, cmd no handlers
+2025-08-07 14:39:33,839 - websockets.client - DEBUG - < TEXT 'CgYKAjEyGAESAggB&' [17 bytes]
+2025-08-07 14:39:33,839 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "12"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:39:37,158 - websockets.client - DEBUG - > PING 25 8b fe 67 [binary, 4 bytes]
+2025-08-07 14:39:37,159 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:39:37,244 - websockets.client - DEBUG - < PONG 25 8b fe 67 [binary, 4 bytes]
+2025-08-07 14:39:37,244 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:39:43,977 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:39:43,978 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:39:57,174 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:39:57,338 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:40:08,081 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:40:08,082 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:40:08,083 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:40:08,083 - websockets.client - DEBUG - < EOF
+2025-08-07 14:40:08,084 - websockets.client - DEBUG - > EOF
+2025-08-07 14:40:08,084 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:40:08,084 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:40:08,085 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:40:11,113 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:40:11,117 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:40:11,938 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:40:11,954 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:40:34,175 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:40:34,190 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:41:30,500 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:41:30,517 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:43:15,361 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:43:15,377 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:43:42,562 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:43:42,580 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:44:17,416 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:44:17,436 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:44:40,820 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:44:40,837 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:46:28,236 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:46:28,248 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:46:28,250 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:46:31,418 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:46:31,428 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:46:31,430 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:46:35,107 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:46:35,347 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:46:35,419 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:46:35,421 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:46:35,422 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:46:35,422 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:46:35,423 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:46:35,423 - websockets.client - DEBUG - > Sec-WebSocket-Key: Zu9rTGeEK5Oe8xlkoz10IQ==
+2025-08-07 14:46:35,423 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:46:35,424 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:46:35,424 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:46:35,460 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:46:35,464 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:46:35,464 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:46:35 GMT+00:00
+2025-08-07 14:46:35,466 - websockets.client - DEBUG - < Sec-WebSocket-Accept: MMrixSArhzKvkmcawawd066ctyQ=
+2025-08-07 14:46:35,466 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:46:35,467 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:46:35,468 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:46:35,469 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:46:35,502 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:46:35,504 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:46:35,728 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4EAE=&' [57 bytes]
+2025-08-07 14:46:35,730 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\020\001"
+
+2025-08-07 14:46:43,884 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:46:43,885 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:46:46,337 - websockets.client - DEBUG - > TEXT 'CgUKATIYARIFCgMwMDc=&' [21 bytes]
+2025-08-07 14:46:46,339 - mini.channels.websocket_client - INFO - send cmd=1, identify='2', message=actionName: "007"
+
+2025-08-07 14:46:55,467 - websockets.client - DEBUG - > PING 50 5d 32 d1 [binary, 4 bytes]
+2025-08-07 14:46:55,468 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:46:55,512 - websockets.client - DEBUG - < PONG 50 5d 32 d1 [binary, 4 bytes]
+2025-08-07 14:46:55,513 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:46:58,771 - websockets.client - DEBUG - < TEXT 'CgUKATIYARICCAE=&' [17 bytes]
+2025-08-07 14:46:58,773 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:47:07,359 - websockets.client - DEBUG - > TEXT 'CgUKATMYARIFCgMwMTI=&' [21 bytes]
+2025-08-07 14:47:07,360 - mini.channels.websocket_client - INFO - send cmd=1, identify='3', message=actionName: "012"
+
+2025-08-07 14:47:15,471 - websockets.client - DEBUG - > PING 82 1a 67 34 [binary, 4 bytes]
+2025-08-07 14:47:15,473 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:47:15,576 - websockets.client - DEBUG - < PONG 82 1a 67 34 [binary, 4 bytes]
+2025-08-07 14:47:15,577 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:47:32,144 - websockets.client - DEBUG - < TEXT 'CgUKATMYARICCAE=&' [17 bytes]
+2025-08-07 14:47:32,145 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:47:32,646 - websockets.client - DEBUG - > TEXT 'CgUKATQYARIFCgMwMzg=&' [21 bytes]
+2025-08-07 14:47:32,647 - mini.channels.websocket_client - INFO - send cmd=1, identify='4', message=actionName: "038"
+
+2025-08-07 14:47:35,462 - websockets.client - DEBUG - > PING 14 cc 28 54 [binary, 4 bytes]
+2025-08-07 14:47:35,465 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:47:35,823 - websockets.client - DEBUG - < PONG 14 cc 28 54 [binary, 4 bytes]
+2025-08-07 14:47:35,824 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:47:36,173 - websockets.client - DEBUG - > TEXT 'CgUKATUYARISChBTdXJ2ZWlsbGFuY2VfMDAz&' [37 bytes]
+2025-08-07 14:47:36,174 - mini.channels.websocket_client - INFO - send cmd=1, identify='5', message=actionName: "Surveillance_003"
+
+2025-08-07 14:47:36,324 - websockets.client - DEBUG - < TEXT 'CgUKATQYARIDEJRO&' [17 bytes]
+2025-08-07 14:47:36,326 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 1
+}
+bodyData: "\020\224N"
+
+2025-08-07 14:47:39,309 - websockets.client - DEBUG - < TEXT 'CgUKATUYARICCAE=&' [17 bytes]
+2025-08-07 14:47:39,311 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:47:39,312 - mini.channels.websocket_client - WARNING - 2.ignore:cmd=1, cmd no handlers.
+2025-08-07 14:47:39,641 - websockets.client - DEBUG - > TEXT 'CgUKATYYARIMCgphY3Rpb25fMDA2&' [29 bytes]
+2025-08-07 14:47:39,642 - mini.channels.websocket_client - INFO - send cmd=1, identify='6', message=actionName: "action_006"
+
+2025-08-07 14:47:43,715 - websockets.client - DEBUG - < TEXT 'CgUKATYYARICCAE=&' [17 bytes]
+2025-08-07 14:47:43,717 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:47:43,905 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:47:43,906 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:47:47,676 - websockets.client - DEBUG - > TEXT 'CgUKATcYARIMCgphY3Rpb25fMDE1&' [29 bytes]
+2025-08-07 14:47:47,677 - mini.channels.websocket_client - INFO - send cmd=1, identify='7', message=actionName: "action_015"
+
+2025-08-07 14:47:53,125 - websockets.client - DEBUG - < TEXT 'CgUKATcYARICCAE=&' [17 bytes]
+2025-08-07 14:47:53,127 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "7"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:47:55,468 - websockets.client - DEBUG - > PING 27 40 a2 7b [binary, 4 bytes]
+2025-08-07 14:47:55,469 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:47:55,498 - websockets.client - DEBUG - < PONG 27 40 a2 7b [binary, 4 bytes]
+2025-08-07 14:47:55,499 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:47:55,687 - websockets.client - DEBUG - > TEXT 'CgUKATgYFg==&' [13 bytes]
+2025-08-07 14:47:55,689 - mini.channels.websocket_client - INFO - send cmd=22, identify='8', message=
+2025-08-07 14:47:55,832 - websockets.client - DEBUG - < TEXT 'CgUKATgYFhICCAE=&' [17 bytes]
+2025-08-07 14:47:55,834 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "8"
+  command: 22
+}
+bodyData: "\010\001"
+
+2025-08-07 14:48:00,786 - websockets.client - DEBUG - > TEXT 'CgUKATkYFg==&' [13 bytes]
+2025-08-07 14:48:00,787 - mini.channels.websocket_client - INFO - send cmd=22, identify='9', message=
+2025-08-07 14:48:01,021 - websockets.client - DEBUG - < TEXT 'CgUKATkYFhICCAE=&' [17 bytes]
+2025-08-07 14:48:01,023 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "9"
+  command: 22
+}
+bodyData: "\010\001"
+
+2025-08-07 14:48:02,165 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 551, in execute_mouth_lamp_action
+    color_map = {"red": MouthLampColor.RED, "green": MouthLampColor.GREEN, "blue": MouthLampColor.BLUE}
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\enum.py", line 429, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: BLUE
+
+2025-08-07 14:48:04,835 - websockets.client - DEBUG - > TEXT 'CgYKAjEwGAESDAoKYWN0aW9uXzAwNA==&' [33 bytes]
+2025-08-07 14:48:04,837 - mini.channels.websocket_client - INFO - send cmd=1, identify='10', message=actionName: "action_004"
+
+2025-08-07 14:48:09,426 - websockets.client - DEBUG - < TEXT 'CgYKAjEwGAESAggB&' [17 bytes]
+2025-08-07 14:48:09,427 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "10"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:48:10,763 - websockets.client - DEBUG - > TEXT 'CgYKAjExGAESBQoDMDEx&' [21 bytes]
+2025-08-07 14:48:10,764 - mini.channels.websocket_client - INFO - send cmd=1, identify='11', message=actionName: "011"
+
+2025-08-07 14:48:12,886 - websockets.client - DEBUG - > TEXT 'CgYKAjEyGAESBQoDMDEy&' [21 bytes]
+2025-08-07 14:48:12,887 - mini.channels.websocket_client - INFO - send cmd=1, identify='12', message=actionName: "012"
+
+2025-08-07 14:48:13,208 - websockets.client - DEBUG - < TEXT 'CgYKAjExGAESAxCUTg==&' [21 bytes]
+2025-08-07 14:48:13,210 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "11"
+  command: 1
+}
+bodyData: "\020\224N"
+
+2025-08-07 14:48:14,110 - websockets.client - DEBUG - > TEXT 'CgYKAjEzGAESBQoDMDEz&' [21 bytes]
+2025-08-07 14:48:14,111 - mini.channels.websocket_client - INFO - send cmd=1, identify='13', message=actionName: "013"
+
+2025-08-07 14:48:14,212 - websockets.client - DEBUG - < TEXT 'CgYKAjEzGAESAxCTAw==&' [21 bytes]
+2025-08-07 14:48:14,213 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "13"
+  command: 1
+}
+bodyData: "\020\223\003"
+
+2025-08-07 14:48:15,472 - websockets.client - DEBUG - > PING d2 e8 06 d9 [binary, 4 bytes]
+2025-08-07 14:48:15,474 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:48:15,564 - websockets.client - DEBUG - < PONG d2 e8 06 d9 [binary, 4 bytes]
+2025-08-07 14:48:15,565 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:48:29,904 - websockets.client - DEBUG - < TEXT 'CgYKAjEyGAESAggB&' [17 bytes]
+2025-08-07 14:48:29,906 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "12"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:48:29,909 - mini.channels.websocket_client - WARNING - 2.ignore:cmd=1, cmd no handlers.
+2025-08-07 14:48:35,491 - websockets.client - DEBUG - > PING 29 23 42 a6 [binary, 4 bytes]
+2025-08-07 14:48:35,494 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:48:35,532 - websockets.client - DEBUG - < PONG 29 23 42 a6 [binary, 4 bytes]
+2025-08-07 14:48:35,534 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:48:43,908 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:48:43,910 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:48:46,963 - websockets.client - DEBUG - > TEXT 'CgYKAjE0GAESBQoDMDEz&' [21 bytes]
+2025-08-07 14:48:46,965 - mini.channels.websocket_client - INFO - send cmd=1, identify='14', message=actionName: "013"
+
+2025-08-07 14:48:55,526 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:48:55,613 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:49:09,803 - websockets.client - DEBUG - < TEXT 'CgYKAjE0GAESAggB&' [17 bytes]
+2025-08-07 14:49:09,804 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "14"
+  command: 1
+}
+bodyData: "\010\001"
+
+2025-08-07 14:49:15,530 - websockets.client - DEBUG - > PING 82 bf 27 12 [binary, 4 bytes]
+2025-08-07 14:49:15,531 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:49:15,575 - websockets.client - DEBUG - < PONG 82 bf 27 12 [binary, 4 bytes]
+2025-08-07 14:49:15,576 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:49:35,522 - websockets.client - DEBUG - > PING 1a 59 be 14 [binary, 4 bytes]
+2025-08-07 14:49:35,525 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:49:35,642 - websockets.client - DEBUG - < PONG 1a 59 be 14 [binary, 4 bytes]
+2025-08-07 14:49:35,643 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:49:43,885 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:49:43,896 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:49:55,545 - websockets.client - DEBUG - > PING 07 a9 50 c9 [binary, 4 bytes]
+2025-08-07 14:49:55,546 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:49:55,572 - websockets.client - DEBUG - < PONG 07 a9 50 c9 [binary, 4 bytes]
+2025-08-07 14:49:55,574 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:50:15,539 - websockets.client - DEBUG - > PING e1 a2 d1 23 [binary, 4 bytes]
+2025-08-07 14:50:15,541 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:50:15,575 - websockets.client - DEBUG - < PONG e1 a2 d1 23 [binary, 4 bytes]
+2025-08-07 14:50:15,576 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:50:35,548 - websockets.client - DEBUG - > PING ef 40 87 95 [binary, 4 bytes]
+2025-08-07 14:50:35,550 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:50:35,744 - websockets.client - DEBUG - < PONG ef 40 87 95 [binary, 4 bytes]
+2025-08-07 14:50:35,745 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:50:43,935 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:50:43,937 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:50:55,526 - websockets.client - DEBUG - > PING 30 48 e1 cd [binary, 4 bytes]
+2025-08-07 14:50:55,528 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:50:55,638 - websockets.client - DEBUG - < PONG 30 48 e1 cd [binary, 4 bytes]
+2025-08-07 14:50:55,640 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:51:15,527 - websockets.client - DEBUG - > PING 3e c4 13 47 [binary, 4 bytes]
+2025-08-07 14:51:15,529 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:51:15,606 - websockets.client - DEBUG - < PONG 3e c4 13 47 [binary, 4 bytes]
+2025-08-07 14:51:15,608 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:51:35,534 - websockets.client - DEBUG - > PING c6 c5 2b ed [binary, 4 bytes]
+2025-08-07 14:51:35,535 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:51:35,578 - websockets.client - DEBUG - < PONG c6 c5 2b ed [binary, 4 bytes]
+2025-08-07 14:51:35,579 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:51:43,882 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:51:43,883 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:51:55,540 - websockets.client - DEBUG - > PING 7b 09 e5 53 [binary, 4 bytes]
+2025-08-07 14:51:56,639 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:51:56,689 - websockets.client - DEBUG - < PONG 7b 09 e5 53 [binary, 4 bytes]
+2025-08-07 14:51:56,789 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:52:15,586 - websockets.client - DEBUG - > PING 0d 8d 13 12 [binary, 4 bytes]
+2025-08-07 14:52:15,588 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:52:15,690 - websockets.client - DEBUG - < PONG 0d 8d 13 12 [binary, 4 bytes]
+2025-08-07 14:52:15,691 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:52:35,598 - websockets.client - DEBUG - > PING 'pLw\x1b' [text, 4 bytes]
+2025-08-07 14:52:35,599 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:52:35,656 - websockets.client - DEBUG - < PONG 'pLw\x1b' [text, 4 bytes]
+2025-08-07 14:52:35,658 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:52:36,185 - mini.channels.websocket_client - WARNING - recv response  failure: 
+2025-08-07 14:52:43,926 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:52:43,928 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:52:55,618 - websockets.client - DEBUG - > PING 'i;`#' [text, 4 bytes]
+2025-08-07 14:52:55,624 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:52:55,734 - websockets.client - DEBUG - < PONG 'i;`#' [text, 4 bytes]
+2025-08-07 14:52:55,735 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:53:12,883 - mini.channels.websocket_client - WARNING - recv response  failure: 
+2025-08-07 14:53:15,638 - websockets.client - DEBUG - > PING dd 70 da 2e [binary, 4 bytes]
+2025-08-07 14:53:15,639 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:53:15,764 - websockets.client - DEBUG - < PONG dd 70 da 2e [binary, 4 bytes]
+2025-08-07 14:53:15,766 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:53:35,625 - websockets.client - DEBUG - > PING "&\x7f\x05'" [text, 4 bytes]
+2025-08-07 14:53:35,626 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:53:35,664 - websockets.client - DEBUG - < PONG "&\x7f\x05'" [text, 4 bytes]
+2025-08-07 14:53:35,665 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:53:43,874 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:53:43,875 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:53:55,638 - websockets.client - DEBUG - > PING aa a6 ab 12 [binary, 4 bytes]
+2025-08-07 14:53:57,398 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:53:57,476 - websockets.client - DEBUG - < PONG aa a6 ab 12 [binary, 4 bytes]
+2025-08-07 14:53:57,477 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:54:15,638 - websockets.client - DEBUG - > PING 71 c9 c4 83 [binary, 4 bytes]
+2025-08-07 14:54:15,639 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:54:15,699 - websockets.client - DEBUG - < PONG 71 c9 c4 83 [binary, 4 bytes]
+2025-08-07 14:54:15,700 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:54:35,635 - websockets.client - DEBUG - > PING 34 fd c7 be [binary, 4 bytes]
+2025-08-07 14:54:35,637 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:54:35,667 - websockets.client - DEBUG - < PONG 34 fd c7 be [binary, 4 bytes]
+2025-08-07 14:54:35,669 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:54:43,958 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:54:43,959 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:54:55,617 - websockets.client - DEBUG - > PING 87 ce f6 24 [binary, 4 bytes]
+2025-08-07 14:54:55,619 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:54:55,838 - websockets.client - DEBUG - < PONG 87 ce f6 24 [binary, 4 bytes]
+2025-08-07 14:54:55,840 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:55:15,637 - websockets.client - DEBUG - > PING ' *`8' [text, 4 bytes]
+2025-08-07 14:55:15,639 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:55:15,826 - websockets.client - DEBUG - < PONG ' *`8' [text, 4 bytes]
+2025-08-07 14:55:15,827 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:55:35,646 - websockets.client - DEBUG - > PING e1 e4 d2 ca [binary, 4 bytes]
+2025-08-07 14:55:35,647 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:55:35,694 - websockets.client - DEBUG - < PONG e1 e4 d2 ca [binary, 4 bytes]
+2025-08-07 14:55:35,695 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:55:43,896 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:55:43,897 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 14:55:45,196 - websockets.client - DEBUG - < CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:55:45,344 - websockets.client - DEBUG - > CLOSE 1000 (OK) [2 bytes]
+2025-08-07 14:55:45,349 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 14:55:45,350 - websockets.client - DEBUG - < EOF
+2025-08-07 14:55:45,351 - websockets.client - DEBUG - > EOF
+2025-08-07 14:55:45,351 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 14:55:45,353 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 14:55:45,458 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 14:55:59,085 - mini.channels.websocket_client - WARNING - Waring: Client not connected!
+2025-08-07 14:56:00,269 - mini.channels.websocket_client - WARNING - client is not alive.
+2025-08-07 14:56:14,552 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:56:14,587 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:58:53,058 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:58:53,717 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 14:58:53,736 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 14:59:17,367 - mini.mini_sdk - INFO - start scanning...
+2025-08-07 14:59:17,378 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.84.181 to multicast group, it is expected to happen on some systems
+2025-08-07 14:59:17,379 - mini.dns.zeroconf - INFO - Address not available when adding 169.254.65.245 to multicast group, it is expected to happen on some systems
+2025-08-07 14:59:17,572 - mini.dns.dns_browser - INFO - Find Device:  <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:59:17,600 - mini.mini_sdk - INFO - found device : <class 'mini.dns.dns_browser.WiFiDevice'> name:Edu_EAA007UBT10000341 address:192.168.100.15 port:51389 type:_Edu_mini_channel_server._tcp.local. server:Android.local.
+2025-08-07 14:59:17,601 - mini.dns.zeroconf - ERROR - Unknown error, possibly benign: ValueError('list.remove(x): x not in list')
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\dns\zeroconf.py", line 2469, in remove_listener
+    self.listeners.remove(listener)
+ValueError: list.remove(x): x not in list
+2025-08-07 14:59:18,390 - mini.mini_sdk - INFO - stop scan finished.
+2025-08-07 14:59:18,451 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 14:59:18,493 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 14:59:18,495 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 14:59:18,496 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 14:59:18,496 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 14:59:18,497 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 14:59:18,497 - websockets.client - DEBUG - > Sec-WebSocket-Key: lW9fOb6nY7Rt1ZoUZaDYmg==
+2025-08-07 14:59:18,498 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 14:59:18,498 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 14:59:18,499 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 14:59:18,509 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 14:59:18,510 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 14:59:18,511 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 07:59:18 GMT+00:00
+2025-08-07 14:59:18,512 - websockets.client - DEBUG - < Sec-WebSocket-Accept: XxPTaSwYBkrLHJw8ez6TWsNDNHc=
+2025-08-07 14:59:18,513 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 14:59:18,514 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 14:59:18,514 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 14:59:18,515 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 14:59:18,553 - websockets.client - DEBUG - > TEXT 'CgUKATEYEA==&' [13 bytes]
+2025-08-07 14:59:18,554 - mini.channels.websocket_client - INFO - send cmd=16, identify='1', message=
+2025-08-07 14:59:18,652 - websockets.client - DEBUG - < TEXT 'CgUKATEYEBIgChxBbHBoYV9NaW5pX291dEVkdS1WMS40LjQuODg4GHI=&' [57 bytes]
+2025-08-07 14:59:18,653 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "1"
+  command: 16
+}
+bodyData: "\n\034Alpha_Mini_outEdu-V1.4.4.888\030r"
+
+2025-08-07 14:59:38,939 - websockets.client - DEBUG - > PING 4f bf 1a 64 [binary, 4 bytes]
+2025-08-07 14:59:38,940 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 14:59:39,021 - websockets.client - DEBUG - < PONG 4f bf 1a 64 [binary, 4 bytes]
+2025-08-07 14:59:39,024 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 14:59:43,877 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 14:59:43,878 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:00:02,948 - websockets.client - DEBUG - > PING 7c 46 03 99 [binary, 4 bytes]
+2025-08-07 15:00:02,951 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:00:03,279 - websockets.client - DEBUG - < PONG 7c 46 03 99 [binary, 4 bytes]
+2025-08-07 15:00:03,317 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:00:23,015 - websockets.client - DEBUG - > PING f1 f5 dd 69 [binary, 4 bytes]
+2025-08-07 15:00:23,223 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:00:23,324 - websockets.client - DEBUG - < PONG f1 f5 dd 69 [binary, 4 bytes]
+2025-08-07 15:00:23,325 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:00:43,021 - websockets.client - DEBUG - > PING 1b 6b b5 a6 [binary, 4 bytes]
+2025-08-07 15:00:43,022 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:00:43,075 - websockets.client - DEBUG - < PONG 1b 6b b5 a6 [binary, 4 bytes]
+2025-08-07 15:00:43,076 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:00:43,860 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:00:43,861 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:01:03,045 - websockets.client - DEBUG - > PING da d2 a4 07 [binary, 4 bytes]
+2025-08-07 15:01:03,048 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:01:03,201 - websockets.client - DEBUG - < PONG da d2 a4 07 [binary, 4 bytes]
+2025-08-07 15:01:03,202 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:01:23,050 - websockets.client - DEBUG - > PING 00 25 f7 16 [binary, 4 bytes]
+2025-08-07 15:01:23,051 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:01:23,113 - websockets.client - DEBUG - < PONG 00 25 f7 16 [binary, 4 bytes]
+2025-08-07 15:01:23,114 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:01:43,070 - websockets.client - DEBUG - > PING d2 cc 83 59 [binary, 4 bytes]
+2025-08-07 15:01:43,072 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:01:43,185 - websockets.client - DEBUG - < PONG d2 cc 83 59 [binary, 4 bytes]
+2025-08-07 15:01:43,187 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:01:43,907 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:01:43,908 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:02:03,094 - websockets.client - DEBUG - > PING cf 87 03 98 [binary, 4 bytes]
+2025-08-07 15:02:03,096 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:02:03,151 - websockets.client - DEBUG - < PONG cf 87 03 98 [binary, 4 bytes]
+2025-08-07 15:02:03,153 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:02:23,090 - websockets.client - DEBUG - > PING a3 f3 0b a9 [binary, 4 bytes]
+2025-08-07 15:02:23,092 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:02:23,118 - websockets.client - DEBUG - < PONG a3 f3 0b a9 [binary, 4 bytes]
+2025-08-07 15:02:23,119 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:02:43,093 - websockets.client - DEBUG - > PING '`{Ru' [text, 4 bytes]
+2025-08-07 15:02:43,096 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:02:43,191 - websockets.client - DEBUG - < PONG '`{Ru' [text, 4 bytes]
+2025-08-07 15:02:43,192 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:02:43,911 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:02:43,912 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:03:03,073 - websockets.client - DEBUG - > PING 27 6c 52 d9 [binary, 4 bytes]
+2025-08-07 15:03:03,074 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:03:03,219 - websockets.client - DEBUG - < PONG 27 6c 52 d9 [binary, 4 bytes]
+2025-08-07 15:03:03,220 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:03:23,098 - websockets.client - DEBUG - > PING 7a ea 3e 6c [binary, 4 bytes]
+2025-08-07 15:03:23,099 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:03:23,156 - websockets.client - DEBUG - < PONG 7a ea 3e 6c [binary, 4 bytes]
+2025-08-07 15:03:23,158 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:03:43,119 - websockets.client - DEBUG - > PING 2a 75 6c ce [binary, 4 bytes]
+2025-08-07 15:03:43,121 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:03:43,225 - websockets.client - DEBUG - < PONG 2a 75 6c ce [binary, 4 bytes]
+2025-08-07 15:03:43,227 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:03:43,908 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:03:43,909 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:04:03,130 - websockets.client - DEBUG - > PING d3 9b ed 04 [binary, 4 bytes]
+2025-08-07 15:04:03,133 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:04:03,164 - websockets.client - DEBUG - < PONG d3 9b ed 04 [binary, 4 bytes]
+2025-08-07 15:04:03,166 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:04:23,144 - websockets.client - DEBUG - > PING f8 ce 2a 58 [binary, 4 bytes]
+2025-08-07 15:04:23,145 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:04:23,240 - websockets.client - DEBUG - < PONG f8 ce 2a 58 [binary, 4 bytes]
+2025-08-07 15:04:23,241 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:04:43,161 - websockets.client - DEBUG - > PING 5d 4f 58 a8 [binary, 4 bytes]
+2025-08-07 15:04:43,163 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:04:43,202 - websockets.client - DEBUG - < PONG 5d 4f 58 a8 [binary, 4 bytes]
+2025-08-07 15:04:43,203 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:04:43,893 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:04:43,894 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:05:03,182 - websockets.client - DEBUG - > PING d6 74 ab b7 [binary, 4 bytes]
+2025-08-07 15:05:03,193 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:05:03,403 - websockets.client - DEBUG - < PONG d6 74 ab b7 [binary, 4 bytes]
+2025-08-07 15:05:03,404 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:05:23,194 - websockets.client - DEBUG - > PING 55 e4 00 61 [binary, 4 bytes]
+2025-08-07 15:05:23,196 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:05:23,303 - websockets.client - DEBUG - < PONG 55 e4 00 61 [binary, 4 bytes]
+2025-08-07 15:05:23,304 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:05:43,213 - websockets.client - DEBUG - > PING 68 e6 5a d3 [binary, 4 bytes]
+2025-08-07 15:05:43,217 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:05:43,312 - websockets.client - DEBUG - < PONG 68 e6 5a d3 [binary, 4 bytes]
+2025-08-07 15:05:43,313 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:05:43,856 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:05:43,858 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:06:03,215 - websockets.client - DEBUG - > PING bd db 3c 2a [binary, 4 bytes]
+2025-08-07 15:06:03,217 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:06:03,276 - websockets.client - DEBUG - < PONG bd db 3c 2a [binary, 4 bytes]
+2025-08-07 15:06:03,277 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:06:23,216 - websockets.client - DEBUG - > PING f9 5f e5 5e [binary, 4 bytes]
+2025-08-07 15:06:23,218 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:06:23,243 - websockets.client - DEBUG - < PONG f9 5f e5 5e [binary, 4 bytes]
+2025-08-07 15:06:23,244 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:06:43,199 - websockets.client - DEBUG - > PING 13 40 ac 92 [binary, 4 bytes]
+2025-08-07 15:06:43,200 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:06:43,325 - websockets.client - DEBUG - < PONG 13 40 ac 92 [binary, 4 bytes]
+2025-08-07 15:06:43,325 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:06:43,854 - websockets.client - DEBUG - < PING '' [0 bytes]
+2025-08-07 15:06:43,855 - websockets.client - DEBUG - > PONG '' [0 bytes]
+2025-08-07 15:06:57,816 - websockets.client - DEBUG - > TEXT 'CgUKATIYChIKCghjb2RlbWFvMg==&' [29 bytes]
+2025-08-07 15:06:57,817 - mini.channels.websocket_client - INFO - send cmd=10, identify='2', message=expressName: "codemao2"
+
+2025-08-07 15:06:57,887 - websockets.client - DEBUG - < TEXT 'CgUKATIYChILEP7//////////wE=&' [29 bytes]
+2025-08-07 15:06:57,888 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "2"
+  command: 10
+}
+bodyData: "\020\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:06:59,301 - websockets.client - DEBUG - > TEXT 'CgUKATMYARIFCgMwMDk=&' [21 bytes]
+2025-08-07 15:06:59,302 - mini.channels.websocket_client - INFO - send cmd=1, identify='3', message=actionName: "009"
+
+2025-08-07 15:06:59,448 - websockets.client - DEBUG - < TEXT 'CgUKATMYARILEP7//////////wE=&' [29 bytes]
+2025-08-07 15:06:59,449 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "3"
+  command: 1
+}
+bodyData: "\020\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:07:03,215 - websockets.client - DEBUG - > PING 72 b1 04 41 [binary, 4 bytes]
+2025-08-07 15:07:03,218 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:07:03,381 - websockets.client - DEBUG - < PONG 72 b1 04 41 [binary, 4 bytes]
+2025-08-07 15:07:03,382 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:07:07,561 - websockets.client - DEBUG - > TEXT 'CgUKATQYARIFCgMwMTE=&' [21 bytes]
+2025-08-07 15:07:07,562 - mini.channels.websocket_client - INFO - send cmd=1, identify='4', message=actionName: "011"
+
+2025-08-07 15:07:07,636 - websockets.client - DEBUG - < TEXT 'CgUKATQYARILEP7//////////wE=&' [29 bytes]
+2025-08-07 15:07:07,638 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "4"
+  command: 1
+}
+bodyData: "\020\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:07:08,826 - websockets.client - DEBUG - > TEXT 'CgUKATUYARIFCgMwMTI=&' [21 bytes]
+2025-08-07 15:07:08,827 - mini.channels.websocket_client - INFO - send cmd=1, identify='5', message=actionName: "012"
+
+2025-08-07 15:07:08,974 - websockets.client - DEBUG - < TEXT 'CgUKATUYARILEP7//////////wE=&' [29 bytes]
+2025-08-07 15:07:08,975 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "5"
+  command: 1
+}
+bodyData: "\020\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:07:11,909 - websockets.client - DEBUG - > TEXT 'CgUKATYYIQ==&' [13 bytes]
+2025-08-07 15:07:12,404 - mini.channels.websocket_client - INFO - send cmd=33, identify='6', message=
+2025-08-07 15:07:12,460 - websockets.client - DEBUG - < TEXT 'CgUKATYYIRILGP7//////////wE=&' [29 bytes]
+2025-08-07 15:07:12,462 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "6"
+  command: 33
+}
+bodyData: "\030\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:07:23,198 - websockets.client - DEBUG - > PING 59 90 98 14 [binary, 4 bytes]
+2025-08-07 15:07:23,199 - websockets.client - DEBUG - % sent keepalive ping
+2025-08-07 15:07:23,219 - websockets.client - DEBUG - < PONG 59 90 98 14 [binary, 4 bytes]
+2025-08-07 15:07:23,220 - websockets.client - DEBUG - % received keepalive pong
+2025-08-07 15:07:34,933 - websockets.client - DEBUG - > TEXT 'CgUKATcYARIFCgMwMTI=&' [21 bytes]
+2025-08-07 15:07:34,934 - mini.channels.websocket_client - INFO - send cmd=1, identify='7', message=actionName: "012"
+
+2025-08-07 15:07:35,133 - websockets.client - DEBUG - < TEXT 'CgUKATcYARILEP7//////////wE=&' [29 bytes]
+2025-08-07 15:07:35,136 - mini.channels.websocket_client - INFO - recv msg: header {
+  id: "7"
+  command: 1
+}
+bodyData: "\020\376\377\377\377\377\377\377\377\377\001"
+
+2025-08-07 15:07:38,297 - websockets.client - DEBUG - > TEXT 'CgUKATAYFQ==&' [13 bytes]
+2025-08-07 15:07:38,297 - mini.channels.websocket_client - INFO - send cmd=21, identify='0', message=
+2025-08-07 15:07:38,301 - websockets.client - DEBUG - > CLOSE 1000 (OK) client closed [15 bytes]
+2025-08-07 15:07:38,302 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 15:07:38,484 - websockets.client - DEBUG - < CLOSE 1000 (OK) client closed [15 bytes]
+2025-08-07 15:07:38,486 - websockets.client - DEBUG - < EOF
+2025-08-07 15:07:38,488 - websockets.client - DEBUG - > EOF
+2025-08-07 15:07:38,489 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 15:07:38,492 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 15:07:38,493 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 15:07:39,533 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 15:07:39,632 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 15:07:39,634 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 15:07:39,635 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 15:07:39,635 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 15:07:39,636 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 15:07:39,636 - websockets.client - DEBUG - > Sec-WebSocket-Key: 51RndxAvK1wAtlMYD22OQg==
+2025-08-07 15:07:39,637 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 15:07:39,637 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 15:07:39,638 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 15:07:39,650 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 15:07:39,651 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 15:07:39,652 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 08:07:40 GMT+00:00
+2025-08-07 15:07:39,652 - websockets.client - DEBUG - < Sec-WebSocket-Accept: 4GOZMb8IeSFGaDPhDYYPJtdfCIY=
+2025-08-07 15:07:39,653 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 15:07:39,653 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 15:07:39,655 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 15:07:39,656 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 15:07:39,685 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 257, in send_msg
+    identify = self.generate_id()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 290, in generate_id
+    return self.__generator.send(0)
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 331, in start_program_mode_working
+    await MiniSdk.enter_program()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\mini_sdk.py", line 357, in enter_program
+    (resultType, response) = await StartRunProgram().execute()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\api_setup.py", line 43, in execute
+    return await self.send(cmd_id, request, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\base_api.py", line 66, in send
+    result = await socket.send_msg(cmd_id, message, timeout)
+RuntimeError: coroutine raised StopIteration
+
+2025-08-07 15:07:39,692 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 257, in send_msg
+    identify = self.generate_id()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 290, in generate_id
+    return self.__generator.send(0)
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 417, in connect_to_robot
+    await start_program_mode_working()
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 331, in start_program_mode_working
+    await MiniSdk.enter_program()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\mini_sdk.py", line 357, in enter_program
+    (resultType, response) = await StartRunProgram().execute()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\api_setup.py", line 43, in execute
+    return await self.send(cmd_id, request, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\base_api.py", line 66, in send
+    result = await socket.send_msg(cmd_id, message, timeout)
+RuntimeError: coroutine raised StopIteration
+
+2025-08-07 15:07:40,631 - websockets.client - DEBUG - > CLOSE 1000 (OK) exit for reconnecting. [24 bytes]
+2025-08-07 15:07:40,631 - websockets.client - DEBUG - = connection is CLOSING
+2025-08-07 15:07:40,670 - websockets.client - DEBUG - < CLOSE 1000 (OK) exit for reconnecting. [24 bytes]
+2025-08-07 15:07:40,670 - websockets.client - DEBUG - < EOF
+2025-08-07 15:07:40,670 - websockets.client - DEBUG - > EOF
+2025-08-07 15:07:40,670 - websockets.client - DEBUG - = connection is CLOSED
+2025-08-07 15:07:40,672 - websockets.client - DEBUG - x half-closing TCP connection
+2025-08-07 15:07:40,672 - mini.channels.websocket_client - WARNING - connection closed ok!
+2025-08-07 15:07:40,673 - mini.channels.websocket_client - INFO - connect begin
+2025-08-07 15:07:40,702 - websockets.client - DEBUG - = connection is CONNECTING
+2025-08-07 15:07:40,703 - websockets.client - DEBUG - > GET / HTTP/1.1
+2025-08-07 15:07:40,704 - websockets.client - DEBUG - > Host: 192.168.100.15:8800
+2025-08-07 15:07:40,704 - websockets.client - DEBUG - > Upgrade: websocket
+2025-08-07 15:07:40,704 - websockets.client - DEBUG - > Connection: Upgrade
+2025-08-07 15:07:40,704 - websockets.client - DEBUG - > Sec-WebSocket-Key: 90xybtbtwG8DM6u2dpEqIA==
+2025-08-07 15:07:40,704 - websockets.client - DEBUG - > Sec-WebSocket-Version: 13
+2025-08-07 15:07:40,706 - websockets.client - DEBUG - > Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits
+2025-08-07 15:07:40,706 - websockets.client - DEBUG - > User-Agent: Python/3.9 websockets/15.0.1
+2025-08-07 15:07:40,753 - websockets.client - DEBUG - < HTTP/1.1 101 Web Socket Protocol Handshake
+2025-08-07 15:07:40,754 - websockets.client - DEBUG - < Connection: Upgrade
+2025-08-07 15:07:40,754 - websockets.client - DEBUG - < Date: Thu, 07 Aug 2025 08:07:41 GMT+00:00
+2025-08-07 15:07:40,754 - websockets.client - DEBUG - < Sec-WebSocket-Accept: y6WEFFmuL5WSkUXA+Q8RLF4vHsM=
+2025-08-07 15:07:40,754 - websockets.client - DEBUG - < Server: TooTallNate Java-WebSocket
+2025-08-07 15:07:40,755 - websockets.client - DEBUG - < Upgrade: websocket
+2025-08-07 15:07:40,755 - websockets.client - DEBUG - = connection is OPEN
+2025-08-07 15:07:40,757 - mini.channels.websocket_client - INFO - connect success
+2025-08-07 15:07:40,785 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 257, in send_msg
+    identify = self.generate_id()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 290, in generate_id
+    return self.__generator.send(0)
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 331, in start_program_mode_working
+    await MiniSdk.enter_program()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\mini_sdk.py", line 357, in enter_program
+    (resultType, response) = await StartRunProgram().execute()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\api_setup.py", line 43, in execute
+    return await self.send(cmd_id, request, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\base_api.py", line 66, in send
+    result = await socket.send_msg(cmd_id, message, timeout)
+RuntimeError: coroutine raised StopIteration
+
+2025-08-07 15:07:40,792 - fastapi_server - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 257, in send_msg
+    identify = self.generate_id()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\channels\websocket_client.py", line 290, in generate_id
+    return self.__generator.send(0)
+StopIteration
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 417, in connect_to_robot
+    await start_program_mode_working()
+  File "D:\AlphaMini\mini_demo\TEST\fastapi_server.py", line 331, in start_program_mode_working
+    await MiniSdk.enter_program()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\mini_sdk.py", line 357, in enter_program
+    (resultType, response) = await StartRunProgram().execute()
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\api_setup.py", line 43, in execute
+    return await self.send(cmd_id, request, timeout)
+  File "D:\AlphaMini\mini_demo\.venv\lib\site-packages\mini\apis\base_api.py", line 66, in send
+    result = await socket.send_msg(cmd_id, message, timeout)
+RuntimeError: coroutine raised StopIteration
+
+2025-08-07 15:07:48,624 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 15:07:49,119 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 15:07:49,134 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-07 15:09:44,114 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 15:09:44,714 - asyncio - DEBUG - Using proactor: IocpProactor
+2025-08-07 15:09:44,733 - asyncio - DEBUG - Using selector: SelectSelector
+2025-08-08 10:23:07,054 - root - ERROR - Failed to apply websocket patch: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-08-08 10:23:07,059 - root - ERROR - Failed to apply websocket patch: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+2025-08-08 10:23:07,068 - __main__ - ERROR - Traceback (most recent call last):
+  File "D:\AlphaMini\mini_demo\test\fastapi_server.py", line 43, in <module>
+    import mini.mini_sdk as MiniSdk
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\__init__.py", line 1, in <module>
+    from .apis import *
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\apis\__init__.py", line 3, in <module>
+    from .base_api import MiniApiResultType
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\apis\base_api.py", line 8, in <module>
+    from ..channels.websocket_client import ubt_websocket as _UBTWebSocket, AbstractMsgHandler
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\channels\__init__.py", line 1, in <module>
+    from .msg_utils import *
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\channels\msg_utils.py", line 7, in <module>
+    from ..pb2.pccodemao_message_pb2 import Message
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\pb2\pccodemao_message_pb2.py", line 14, in <module>
+    from ..pb2 import pccodemao_messageheader_pb2 as pccodemao__messageheader__pb2
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\mini\pb2\pccodemao_messageheader_pb2.py", line 34, in <module>
+    _descriptor.FieldDescriptor(
+  File "C:\Users\MineDuck\AppData\Local\Programs\Python\Python39\lib\site-packages\google\protobuf\descriptor.py", line 621, in __new__
+    _message.Message._CheckCalledFromGeneratedFile()
+TypeError: Descriptors cannot be created directly.
+If this call came from a _pb2.py file, your generated code is out of date and must be regenerated with protoc >= 3.19.0.
+If you cannot immediately regenerate your protos, some other possible workarounds are:
+ 1. Downgrade the protobuf package to 3.20.x or lower.
+ 2. Set PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (but this will use pure-Python parsing and will be much slower).
+
+More information: https://developers.google.com/protocol-buffers/docs/news/2022-05-06#python-updates
+

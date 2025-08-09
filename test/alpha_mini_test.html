@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Mini Robot Controller - FastAPI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .api-info {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .api-info a {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        .connection-status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 10px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+        }
+
+        .status-indicator {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .status-connected { background: #28a745; }
+        .status-disconnected { background: #dc3545; }
+        .status-connecting { background: #ffc107; animation: pulse 1s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-connect {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+        }
+
+        .btn-disconnect {
+            background: linear-gradient(45deg, #dc3545, #fd7e14);
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .action-btn, .expression-btn {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+        }
+
+        .expression-btn {
+            background: linear-gradient(45deg, #2196F3, #1976D2);
+            color: white;
+        }
+
+        .action-btn:hover, .expression-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        .action-btn:disabled, .expression-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .batch-controls {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .batch-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #856404;
+        }
+
+        .batch-btn {
+            background: linear-gradient(45deg, #ffc107, #e0a800);
+            color: #212529;
+        }
+
+        .log {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 20px;
+            border-radius: 10px;
+            height: 250px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .log-entry {
+            margin-bottom: 5px;
+            padding: 2px 0;
+        }
+
+        .log-timestamp {
+            color: #888;
+        }
+
+        .log-success { color: #00ff00; }
+        .log-error { color: #ff4444; }
+        .log-info { color: #44aaff; }
+        .log-warning { color: #ffaa44; }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s ease-in-out infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #1976d2;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="font-size: 3em; margin-bottom: 20px;">🤖</div>
+            <h1>Alpha Mini Controller</h1>
+            <p>Điều khiển robot Alpha Mini qua FastAPI</p>
+        </div>
+
+        <div class="api-info">
+            <strong>FastAPI Documentation:</strong>
+            <a href="/docs" target="_blank">Swagger UI</a> |
+            <a href="/redoc" target="_blank">ReDoc</a> |
+            <a href="/api/health" target="_blank">Health Check</a>
+        </div>
+
+        <div class="stats" id="statsContainer">
+            <div class="stat-card">
+                <div class="stat-number" id="actionCount">0</div>
+                <div class="stat-label">Actions Executed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="connectionTime">--</div>
+                <div class="stat-label">Connection Status</div>
+            </div>
+        </div>
+
+        <div class="connection-status">
+            <div class="status-indicator status-disconnected" id="statusIndicator"></div>
+            <span id="statusText">Chưa kết nối</span>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-connect" id="connectBtn" onclick="connect()">
+                Kết nối Robot
+            </button>
+            <button class="btn btn-disconnect" id="disconnectBtn" onclick="disconnect()" disabled>
+                Ngắt kết nối
+            </button>
+        </div>
+
+        <div class="batch-controls">
+            <div class="batch-title">🎪 Batch Actions</div>
+            <button class="btn batch-btn" onclick="executeDemo()" id="demoBtn">
+                Chạy Demo (Wave → Happy → Dance)
+            </button>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">🎭 Actions (Hành động)</h2>
+            <div class="button-grid" id="actionsGrid">
+                <!-- Actions will be loaded here -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">😊 Expressions (Biểu cảm)</h2>
+            <div class="button-grid" id="expressionsGrid">
+                <!-- Expressions will be loaded here -->
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">📝 System Log</h3>
+            <div class="log" id="logContainer">
+                <div class="log-entry log-info">
+                    <span class="log-timestamp">[Ready]</span> 🚀 FastAPI Alpha Mini Controller started!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        let isConnected = false;
+        let isConnecting = false;
+        let actionCount = 0;
+
+        // API Base URL for FastAPI
+        const API_BASE = '';
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            log('🌟 Initializing Alpha Mini Controller...', 'info');
+            loadActions();
+            loadExpressions();
+            updateStatus();
+
+            // Update status every 3 seconds
+            setInterval(updateStatus, 3000);
+        });
+
+        // Enhanced logging function
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const logContainer = document.getElementById('logContainer');
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+
+            // Add emoji based on type
+            const emoji = {
+                'info': 'ℹ️',
+                'success': '✅',
+                'error': '❌',
+                'warning': '⚠️'
+            };
+
+            logEntry.innerHTML = `<span class="log-timestamp">[${timestamp}]</span> ${emoji[type] || ''} ${message}`;
+
+            logContainer.appendChild(logEntry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+
+            // Keep only last 100 log entries
+            while (logContainer.children.length > 100) {
+                logContainer.removeChild(logContainer.firstChild);
+            }
+        }
+
+        // Update connection status and stats
+        async function updateStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/api/status`);
+                const data = await response.json();
+
+                isConnected = data.connected;
+                actionCount = data.action_count;
+
+                // Update UI elements
+                const statusIndicator = document.getElementById('statusIndicator');
+                const statusText = document.getElementById('statusText');
+                const connectBtn = document.getElementById('connectBtn');
+                const disconnectBtn = document.getElementById('disconnectBtn');
+                const actionCountEl = document.getElementById('actionCount');
+                const connectionTimeEl = document.getElementById('connectionTime');
+
+                actionCountEl.textContent = actionCount;
+
+                if (isConnected) {
+                    statusIndicator.className = 'status-indicator status-connected';
+                    statusText.textContent = `✅ Đã kết nối: ${data.device_name || 'Alpha Mini'}`;
+                    connectBtn.disabled = true;
+                    disconnectBtn.disabled = false;
+                    connectionTimeEl.textContent = 'Connected';
+                    enableButtons();
+                } else {
+                    statusIndicator.className = 'status-indicator status-disconnected';
+                    statusText.textContent = '❌ Chưa kết nối';
+                    connectBtn.disabled = isConnecting;
+                    disconnectBtn.disabled = true;
+                    connectionTimeEl.textContent = 'Disconnected';
+                    disableButtons();
+                }
+            } catch (error) {
+                log(`Network error: ${error.message}`, 'error');
+            }
+        }
+
+        // Connect to robot using FastAPI
+        async function connect() {
+            if (isConnecting) return;
+
+            isConnecting = true;
+            const connectBtn = document.getElementById('connectBtn');
+            const statusIndicator = document.getElementById('statusIndicator');
+
+            connectBtn.innerHTML = '🔄 Đang kết nối... <div class="loading"></div>';
+            connectBtn.disabled = true;
+            statusIndicator.className = 'status-indicator status-connecting';
+
+            log('🔌 Starting connection to Alpha Mini robot...', 'info');
+
+            try {
+                const response = await fetch(`${API_BASE}/api/connect`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'}
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    log(`🎉 ${data.message}`, 'success');
+                    isConnected = true;
+                } else {
+                    const error = await response.json();
+                    log(`Connection failed: ${error.detail}`, 'error');
+                }
+            } catch (error) {
+                log(`Connection error: ${error.message}`, 'error');
+            }
+
+            isConnecting = false;
+            connectBtn.innerHTML = 'Kết nối Robot';
+            await updateStatus();
+        }
+
+        // Disconnect from robot
+        async function disconnect() {
+            log('🔌 Disconnecting from robot...', 'info');
+
+            try {
+                const response = await fetch(`${API_BASE}/api/disconnect`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'}
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    log(`👋 ${data.message}`, 'success');
+                } else {
+                    const error = await response.json();
+                    log(`Disconnect failed: ${error.detail}`, 'error');
+                }
+            } catch (error) {
+                log(`Disconnect error: ${error.message}`, 'error');
+            }
+
+            await updateStatus();
+        }
+
+        // Load available actions from FastAPI
+        async function loadActions() {
+            try {
+                const response = await fetch(`${API_BASE}/api/actions`);
+                const actions = await response.json();
+
+                const actionsGrid = document.getElementById('actionsGrid');
+                actionsGrid.innerHTML = '';
+
+                actions.forEach(action => {
+                    const button = document.createElement('button');
+                    button.className = 'action-btn';
+                    button.textContent = `${action.display_name} (${action.category})`;
+                    button.onclick = () => executeAction(action.name, action.display_name);
+                    button.disabled = !isConnected;
+                    actionsGrid.appendChild(button);
+                });
+
+                log(`📦 Loaded ${actions.length} actions from API`, 'info');
+            } catch (error) {
+                log(`Failed to load actions: ${error.message}`, 'error');
+            }
+        }
+
+        // Load available expressions from FastAPI
+        async function loadExpressions() {
+            try {
+                const response = await fetch(`${API_BASE}/api/expressions`);
+                const expressions = await response.json();
+
+                const expressionsGrid = document.getElementById('expressionsGrid');
+                expressionsGrid.innerHTML = '';
+
+                expressions.forEach(expression => {
+                    const button = document.createElement('button');
+                    button.className = 'expression-btn';
+                    button.textContent = `${expression.display_name} (${expression.category})`;
+                    button.onclick = () => executeExpression(expression.name, expression.display_name);
+                    button.disabled = !isConnected;
+                    expressionsGrid.appendChild(button);
+                });
+
+                log(`😊 Loaded ${expressions.length} expressions from API`, 'info');
+            } catch (error) {
+                log(`Failed to load expressions: ${error.message}`, 'error');
+            }
+        }
+
+        // Execute action via FastAPI
+        async function executeAction(actionName, displayName) {
+            if (!isConnected) {
+                log('❌ Robot not connected!', 'error');
+                return;
+            }
+
+            log(`🎭 Executing action: ${displayName}`, 'info');
+
+            try {
+                const startTime = Date.now();
+                const response = await fetch(`${API_BASE}/api/actions/execute`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        name: actionName,
+                        wait_for_completion: true
+                    })
+                });
+
+                const data = await response.json();
+                const duration = Date.now() - startTime;
+
+                if (response.ok && data.success) {
+                    log(`✨ Action success: ${displayName} (${duration}ms)`, 'success');
+                    actionCount++;
+                } else {
+                    log(`❌ Action failed: ${displayName} - ${data.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                log(`💥 Action error: ${displayName} - ${error.message}`, 'error');
+            }
+
+            await updateStatus();
+        }
+
+        // Execute expression via FastAPI
+        async function executeExpression(expressionName, displayName) {
+            if (!isConnected) {
+                log('❌ Robot not connected!', 'error');
+                return;
+            }
+
+            log(`😊 Executing expression: ${displayName}`, 'info');
+
+            try {
+                const startTime = Date.now();
+                const response = await fetch(`${API_BASE}/api/expressions/execute`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({
+                        name: expressionName,
+                        wait_for_completion: true
+                    })
+                });
+
+                const data = await response.json();
+                const duration = Date.now() - startTime;
+
+                if (response.ok && data.success) {
+                    log(`🌟 Expression success: ${displayName} (${duration}ms)`, 'success');
+                    actionCount++;
+                } else {
+                    log(`❌ Expression failed: ${displayName} - ${data.message || 'Unknown error'}`, 'error');
+                }
+            } catch (error) {
+                log(`💥 Expression error: ${displayName} - ${error.message}`, 'error');
+            }
+
+            await updateStatus();
+        }
+
+        // Execute demo batch actions
+        async function executeDemo() {
+            if (!isConnected) {
+                log('❌ Robot not connected!', 'error');
+                return;
+            }
+
+            const demoBtn = document.getElementById('demoBtn');
+            demoBtn.disabled = true;
+            demoBtn.innerHTML = '🎪 Running Demo... <div class="loading"></div>';
+
+            log('🎪 Starting demo sequence...', 'info');
+
+            try {
+                const response = await fetch(`${API_BASE}/api/actions/batch`, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(["Wave", "Happy", "Dance"])
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    log(`🎉 Demo completed! Results: ${JSON.stringify(data.batch_results)}`, 'success');
+                } else {
+                    log(`❌ Demo failed: ${data.detail}`, 'error');
+                }
+            } catch (error) {
+                log(`💥 Demo error: ${error.message}`, 'error');
+            }
+
+            demoBtn.disabled = false;
+            demoBtn.innerHTML = 'Chạy Demo (Wave → Happy → Dance)';
+            await updateStatus();
+        }
+
+        // Enable/disable buttons based on connection
+        function enableButtons() {
+            const actionBtns = document.querySelectorAll('.action-btn');
+            const expressionBtns = document.querySelectorAll('.expression-btn');
+            const demoBtn = document.getElementById('demoBtn');
+
+            actionBtns.forEach(btn => btn.disabled = false);
+            expressionBtns.forEach(btn => btn.disabled = false);
+            demoBtn.disabled = false;
+        }
+
+        function disableButtons() {
+            const actionBtns = document.querySelectorAll('.action-btn');
+            const expressionBtns = document.querySelectorAll('.expression-btn');
+            const demoBtn = document.getElementById('demoBtn');
+
+            actionBtns.forEach(btn => btn.disabled = true);
+            expressionBtns.forEach(btn => btn.disabled = true);
+            demoBtn.disabled = true;
+        }
+    </script>
+</body>
+</html>

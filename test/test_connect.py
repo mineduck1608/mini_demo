@@ -1,6 +1,10 @@
 import asyncio
 import logging
 
+# Apply websocket compatibility patch before importing Mini SDK
+from websocket_patch import apply_websocket_patch
+apply_websocket_patch()
+
 import mini.mini_sdk as MiniSdk
 from mini.dns.dns_browser import WiFiDevice
 
@@ -16,7 +20,7 @@ async def test_get_device_by_name():
      Returns:
          WiFiDevice: Contains information such as robot name, ip, port, etc.
     """
-    result: WiFiDevice = await MiniSdk.get_device_by_name("00879", 10)
+    result: WiFiDevice = await MiniSdk.get_device_by_name("000341", 10)
     print(f"test_get_device_by_name result:{result}")
     return result
 
@@ -85,8 +89,17 @@ MiniSdk.set_robot_type(MiniSdk.RobotType.EDU)
 async def main():
     device: WiFiDevice = await test_get_device_by_name()
     if device:
-        await test_connect(device)
-        await shutdown()
+        connected = await test_connect(device)
+        if connected:
+            print("Connection successful, testing program mode...")
+            await asyncio.sleep(2)  # Wait for connection to stabilize
+            await test_start_run_program()
+            print("Connection test completed successfully!")
+            await shutdown()
+        else:
+            print("Failed to connect to device.")
+    else:
+        print("No device found.")
 
 
 if __name__ == '__main__':

@@ -42,7 +42,7 @@ async def test_control_behavior():
 
     """
     # control_type: START, STOP
-    block: StartBehavior = StartBehavior(name="dance_0004en")
+    block: StartBehavior = StartBehavior(name="dance_0006en")
     # response ControlBehaviorResponse
     (resultType, response) = await block.execute()
 

@@ -23,7 +23,7 @@ async def test_play_action():
 
      """
     # action_name: Action file name, you can get the actions supported by the robot through GetActionList
-    block: PlayAction = PlayAction(action_name='018')
+    block: PlayAction = PlayAction(action_name='action_013')
     # response: PlayActionResponse
     (resultType, response) = await block.execute()
 
@@ -82,7 +82,7 @@ async def main():
     device: WiFiDevice = await test_get_device_by_name()
     if device:
         await MiniSdk.connect(device)
-        await MiniSdk.enter_program()
+        #await MiniSdk.enter_program()
         await test_play_action()
         await test_move_robot()
         await test_get_action_list()
